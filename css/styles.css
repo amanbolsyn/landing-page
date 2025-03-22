@@ -1,0 +1,38 @@
+html {
+    width: 1440px;
+    font-family: 'Inter';
+    /* margin:auto; */
+}
+
+/* body container  */
+.body-container {
+    display: grid;
+    grid-template-areas:
+        /* body grid layout scheme */
+        "header"
+        "main"
+        "footer";
+    margin: 0px;
+}
+
+.header,
+.main,
+.footer {}
+
+
+.header {
+    height: 80px;
+}
+
+nav>div>a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size:16px;
+}
+
+.main {}
+
+.footer {
+    background-color: #53389E;
+}
