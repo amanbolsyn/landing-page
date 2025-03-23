@@ -1,8 +1,12 @@
 html {
     width: 1440px;
-    font-family: 'Inter';
     /* margin:auto; */
+    font-family: 'Inter';
+
+    /* helps to crate smooth srolling */
+    scroll-behavior: smooth;
 }
+
 
 /* body container  */
 .body-container {
@@ -17,7 +21,8 @@ html {
 
 .header,
 .main,
-.footer {}
+.footer {
+}
 
 
 .header {
