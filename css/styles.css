@@ -19,25 +19,71 @@ html {
     margin: 0px;
 }
 
-.header,
+
+/* styles for three main rows of a grid */
+/* .header,
 .main,
 .footer {
-}
+} */
 
 
 .header {
     height: 80px;
 }
 
+.header div  {
+    display: inline-block;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+#nav-left  {
+    float: left;
+    margin-left: 110px;
+    font-size:24px;
+    
+}
+
+#nav-left a {
+    margin-left: 8px;
+}
+
+#nav-right {
+    float:right;
+    margin-right: 110px;
+    font-size: 16px;         /* Enable flexbox */
+}
+
+#nav-right a {
+   margin-right: 17.3px;
+   position: relative;
+   bottom: 7px;
+
+   
+ }
+
+#nav-right img {
+    width: 24px;
+    height: 24px;
+}
+
+/* links inside nav element  */
 nav>div>a {
     text-decoration: none;
     color: black;
     font-weight: 600;
-    font-size:16px;
+    line-height: 24px;
+    font-style: normal;
 }
 
-.main {}
+
+.main {
+
+}
 
 .footer {
     background-color: #53389E;
 }
+
+/* Header */
+
