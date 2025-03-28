@@ -1,10 +1,12 @@
 html {
-    width: 1440px;
+    width: 100wh;
+    max-width: 1440px;
     /* margin:auto; */
     font-family: 'Inter';
-
+   
     /* helps to crate smooth srolling */
     scroll-behavior: smooth;
+    
 }
 
 
@@ -16,7 +18,7 @@ html {
         "header"
         "main-container"
         "footer";
-    margin: 0px;
+   margin:0px;
 }
 
 
@@ -29,19 +31,19 @@ html {
 
 .header {
     height: 80px;
+    padding: 0 110px;
 }
 
 .header div  {
     display: inline-block;
     margin-top: 28px;
     margin-bottom: 28px;
+
 }
 
 #nav-left  {
     float: left;
-    margin-left: 110px;
-    font-size:24px;
-    
+     font-size:24px;
 }
 
 #nav-left a {
@@ -50,7 +52,6 @@ html {
 
 #nav-right {
     float:right;
-    margin-right: 110px;
     font-size: 16px;     
 }
 
@@ -86,36 +87,72 @@ nav>div>a {
         "section-five"
         "section-six";
     margin: 0px;
-
-    background-color: #53389E;
+    padding: 0 110px;
+    
 }
 
 .section-one {
-    background-color: antiquewhite;
+    height: 800px;
 }
+
+.section-one article {
+   height: 640px;
+}
+
+.section-one h1 {
+    font-size: 60px;
+}
+
+.section-one button {
+    background-color: white;
+    border:none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 0.6em;
+    padding: 0.9em 1.2em;
+    cursor: pointer;
+
+}
+
+.section-one button:nth-of-type(1){
+    background-color:rgba(127, 86, 217, 1);
+    color:white
+}
+
+.section-one button:nth-of-type(2){
+ border: 2px rgba(213, 215, 218, 1) solid
+}
+
 
 .section-two {
     background-color: aquamarine;
+    height: 788px;
 }
 
 .section-three {
-    background-color: azure;
+    /* background-color: azure; */
+    height: 640px;
 }
 
 .section-four {
-    background-color: blue;
+    /* background-color: blue; */
+    height: 992px;
 }
 
 .section-five {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
+    height: 878px;
 }
 
 .section-six {
-    background-color: azure;
+    /* background-color: azure; */
+    height: 676px;
 }
 .footer {
     background-color: #53389E;
-}
+    height: 168px;
+    padding: 0 110px;
+ }
 
-/* Header */
+
 
