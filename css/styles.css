@@ -64,6 +64,7 @@ html {
 #nav-right img {
     width: 24px;
     height: 24px;
+    cursor: pointer;
 }
 
 /* links inside nav element  */
@@ -97,21 +98,32 @@ nav>div>a {
 
 .section-one article {
    height: 640px;
+   background-image: url("/assets/section-images/first-section/office-desktop.png");
+   background-repeat: no-repeat;
+   background-position: right;
+   padding: 0px;
 }
 
 .section-one h1 {
     font-size: 60px;
+    width: 45vw; 
+    padding-top: 155px;
+    margin-bottom: 0px;
+}
+
+.section-one p {
+    font-size: 20px;
+    font-weight: 400;
+    width: 33vw;
 }
 
 .section-one button {
     background-color: white;
     border:none;
     font-size: 18px;
-    font-weight: 600;
-    border-radius: 0.6em;
+    border-radius: 0.5em;
     padding: 0.9em 1.2em;
     cursor: pointer;
-
 }
 
 .section-one button:nth-of-type(1){
@@ -125,7 +137,6 @@ nav>div>a {
 
 
 .section-two {
-    background-color: aquamarine;
     height: 788px;
 }
 
