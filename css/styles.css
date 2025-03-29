@@ -3,10 +3,10 @@ html {
     max-width: 1440px;
     /* margin:auto; */
     font-family: 'Inter';
-   
+
     /* helps to crate smooth srolling */
     scroll-behavior: smooth;
-    
+
 }
 
 
@@ -18,7 +18,7 @@ html {
         "header"
         "main-container"
         "footer";
-   margin:0px;
+    margin: 0px;
 }
 
 
@@ -34,16 +34,16 @@ html {
     padding: 0 110px;
 }
 
-.header div  {
+.header div {
     display: inline-block;
     margin-top: 28px;
     margin-bottom: 28px;
 
 }
 
-#nav-left  {
+#nav-left {
     float: left;
-     font-size:24px;
+    font-size: 24px;
 }
 
 #nav-left a {
@@ -51,15 +51,15 @@ html {
 }
 
 #nav-right {
-    float:right;
-    font-size: 16px;     
+    float: right;
+    font-size: 16px;
 }
 
 #nav-right a {
-   margin-right: 17.3px;
-   position: relative;
-   bottom: 7px;
- }
+    margin-right: 17.3px;
+    position: relative;
+    bottom: 7px;
+}
 
 #nav-right img {
     width: 24px;
@@ -89,7 +89,7 @@ nav>div>a {
         "section-six";
     margin: 0px;
     padding: 0 110px;
-    
+
 }
 
 .section-one {
@@ -97,16 +97,16 @@ nav>div>a {
 }
 
 .section-one article {
-   height: 640px;
-   background-image: url("/assets/section-images/first-section/office-desktop.png");
-   background-repeat: no-repeat;
-   background-position: right;
-   padding: 0px;
+    height: 640px;
+    background-image: url("/assets/section-images/first-section/office-desktop.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 0px;
 }
 
 .section-one h1 {
     font-size: 60px;
-    width: 50vw; 
+    width: 45vw;
     padding-top: 157px;
     padding-left: 2px;
     margin-bottom: 0px;
@@ -117,8 +117,8 @@ nav>div>a {
     font-weight: 400;
     word-spacing: 2.2px;
     padding-top: 7px;
-    width: 38vw;
-    padding-left:2px;
+    width: 34vw;
+    padding-left: 2px;
     line-height: 27px;
     color: #535862;
 
@@ -126,28 +126,29 @@ nav>div>a {
 
 .section-one button {
     background-color: white;
-    font-size: 18px;
-    border-radius: 0.7em;
-    padding: 1.1em 1.7em;
     cursor: pointer;
-    margin-top: 27px;
-
-    
+    box-sizing: border-box;
+    font-size:  18px; 
+    height: 3.8rem;
+    border-radius: 0.8rem;
+    margin-top: 30px;
 }
 
-.section-one button:nth-of-type(1){
-    background-color:rgba(127, 86, 217, 1);
-    color:white;
-    border:none
-
+.section-one button:nth-of-type(1) {
+    background-color: rgba(127, 86, 217, 1);
+    border: 0.11rem rgba(127,86, 217,1) solid;
+    color: white;
+    font-size: 18px;
+    width: 9.2rem;
 
 }
 
-.section-one button:nth-of-type(2){
- border: 2px rgba(213, 215, 218, 1) solid;
- box-sizing: border-box;
- width: max-content;
-}
+.section-one button:nth-of-type(2) {
+    border: 0.11rem rgba(213, 215, 218, 1) solid;
+    font-size: 18px;
+    width: 7.7rem;
+    margin-left:0.4rem;
+  }
 
 
 .section-two {
@@ -173,11 +174,9 @@ nav>div>a {
     /* background-color: azure; */
     height: 676px;
 }
+
 .footer {
     background-color: #53389E;
     height: 168px;
     padding: 0 110px;
- }
-
-
-
+}
