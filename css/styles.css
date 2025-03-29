@@ -106,33 +106,47 @@ nav>div>a {
 
 .section-one h1 {
     font-size: 60px;
-    width: 45vw; 
-    padding-top: 155px;
+    width: 50vw; 
+    padding-top: 157px;
+    padding-left: 2px;
     margin-bottom: 0px;
 }
 
 .section-one p {
     font-size: 20px;
     font-weight: 400;
-    width: 33vw;
+    word-spacing: 2.2px;
+    padding-top: 7px;
+    width: 38vw;
+    padding-left:2px;
+    line-height: 27px;
+    color: #535862;
+
 }
 
 .section-one button {
     background-color: white;
-    border:none;
     font-size: 18px;
-    border-radius: 0.5em;
-    padding: 0.9em 1.2em;
+    border-radius: 0.7em;
+    padding: 1.1em 1.7em;
     cursor: pointer;
+    margin-top: 27px;
+
+    
 }
 
 .section-one button:nth-of-type(1){
     background-color:rgba(127, 86, 217, 1);
-    color:white
+    color:white;
+    border:none
+
+
 }
 
 .section-one button:nth-of-type(2){
- border: 2px rgba(213, 215, 218, 1) solid
+ border: 2px rgba(213, 215, 218, 1) solid;
+ box-sizing: border-box;
+ width: max-content;
 }
 
 
