@@ -9,8 +9,9 @@ html {
 
 }
 
-
-/* body container  */
+/* ************ */
+/* BODY LAYOUT  */
+/* ************ */
 .body-container {
     display: grid;
     grid-template-areas:
@@ -21,15 +22,11 @@ html {
     margin: 0px;
 }
 
-
-/* styles for three main rows of a grid */
-/* .header,
-.main,
-.footer {
-} */
-
-
+/* ************************* */
+/* HEADER/NAVIGATION STYLING */
+/* ************************* */
 .header {
+    grid-area: header;
     height: 80px;
     padding: 0 110px;
 }
@@ -78,6 +75,7 @@ nav>div>a {
 
 /* Main container grid */
 .main-container {
+    grid-area: main-container;
     display: grid;
     grid-template-areas:
         /* body grid layout scheme */
@@ -92,8 +90,11 @@ nav>div>a {
 
 }
 
-/*  */
+/* ******************* */
+/* SECTION ONE STYLING */
+/* ******************* */
 .section-one {
+    grid-area: section-one;
     height: 800px;
 }
 
@@ -107,7 +108,7 @@ nav>div>a {
 
 .section-one h1 {
     font-size: 60px;
-    width: 45vw;
+    /* width: 45vw; */
     padding-top: 157px;
     padding-left: 2px;
     margin-bottom: 0px;
@@ -118,7 +119,7 @@ nav>div>a {
     font-weight: 400;
     word-spacing: 2.2px;
     padding-top: 7px;
-    width: 34vw;
+    /* width: 34vw; */
     padding-left: 2px;
     line-height: 27px;
     color: #535862;
@@ -129,7 +130,7 @@ nav>div>a {
     background-color: white;
     cursor: pointer;
     box-sizing: border-box;
-    font-size:  18px; 
+    font-size: 18px;
     height: 3.8rem;
     border-radius: 0.8rem;
     margin-top: 30px;
@@ -137,7 +138,7 @@ nav>div>a {
 
 .section-one button:nth-of-type(1) {
     background-color: rgba(127, 86, 217, 1);
-    border: 0.11rem rgba(127,86, 217,1) solid;
+    border: 0.11rem rgba(127, 86, 217, 1) solid;
     color: white;
     font-size: 18px;
     width: 9.2rem;
@@ -148,54 +149,131 @@ nav>div>a {
     border: 0.11rem rgba(213, 215, 218, 1) solid;
     font-size: 18px;
     width: 7.7rem;
-    margin-left:0.4rem;
-  }
-
-
-.section-two {
-    height: 788px;
+    margin-left: 0.4rem;
 }
 
+
+/* ******************* */
+/* SECTION TWO STYLING */
+/* ******************* */
+.section-two {
+    grid-area: section-two;
+    height: 788px;
+
+    display:grid;
+    grid-template-areas: 
+        "section-heading section-heading section-heading"
+        "section-two-card section-two-card section-two-card"
+        "section-two-card section-two-card section-two-card";
+}
+
+
+.section-heading {
+    grid-area: section-heading;
+}
+
+.section-two .section-heading a {
+    color: #6941C6;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.section-two .section-heading h2 {
+    text-align: center;
+    font-weight: 600;
+    color: #181D27;
+    letter-spacing: -2%;
+    font-size: 37px;
+    margin-top: 12px;
+    margin-bottom: 0px
+}
+
+.section-two .section-heading p {
+    color: #535862;
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 25px;
+    line-height: 25px;
+
+}
+
+.section-two-card {
+    grid-area: section-two-card;
+}
+
+.section-two img {
+    background-color: #7F56D9;
+    padding: 13px;
+    border-radius: 10px;
+ }
+
+/* ********************** */
+ /* SECTION TRHEE STYLING */
+ /* ********************* */
 .section-three {
+    grid-area: section-three;
     /* background-color: azure; */
     height: 640px;
 }
 
+/* ********************* */
+ /* SECTION FOUR STYLING */
+ /* ******************** */
 .section-four {
+    grid-area: section-four;
     /* background-color: blue; */
     height: 992px;
 }
 
+/* ********************* */
+ /* SECTION FIVE STYLING */
+ /* ******************** */
 .section-five {
+    grid-area: section-five;
     /* background-color: blueviolet; */
     height: 878px;
 }
 
+/* ******************** */
+ /* SECTION SIX STYLING */
+ /* ******************* */
 .section-six {
+    grid-area: section-six;
     /* background-color: azure; */
     height: 676px;
 }
 
+.section-six img {
+    background-color: #7F56D9 ;
+}
+
+/* ************* */
 /* FOOTER STYLES */
+/* ************* */
 .footer {
-    background-color: #53389E ;
+    grid-area: footer;
+    background-color: #53389E;
     /* height: 168px; */
     color: white;
     padding: 0px 110px;
     padding-top: 65px;
-    display:grid;
-    grid-template-areas: 
-    "footer-left footer-right";
+    display: grid;
+    grid-template-areas:
+        "footer-left footer-right";
     grid-template-columns: 1fr;
- }
+}
 
 .footer p {
     word-spacing: 2.2px;
     margin: 0;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);  
- }
+    transform: translateY(-50%);
+}
 
 
 .footer div {
@@ -206,5 +284,5 @@ nav>div>a {
 }
 
 .footer-right img {
-    padding-left:20px;
+    padding-left: 20px;
 }
