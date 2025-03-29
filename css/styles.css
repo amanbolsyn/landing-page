@@ -92,6 +92,7 @@ nav>div>a {
 
 }
 
+/*  */
 .section-one {
     height: 800px;
 }
@@ -175,8 +176,35 @@ nav>div>a {
     height: 676px;
 }
 
+/* FOOTER STYLES */
 .footer {
-    background-color: #53389E;
-    height: 168px;
-    padding: 0 110px;
+    background-color: #53389E ;
+    /* height: 168px; */
+    color: white;
+    padding: 0px 110px;
+    padding-top: 65px;
+    display:grid;
+    grid-template-areas: 
+    "footer-left footer-right";
+    grid-template-columns: 1fr;
+ }
+
+.footer p {
+    word-spacing: 2.2px;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);  
+ }
+
+
+.footer div {
+    display: inline;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    border-top: 0.2px white solid;
+}
+
+.footer-right img {
+    padding-left:20px;
 }
