@@ -157,20 +157,21 @@ nav>div>a {
 /* SECTION TWO STYLING */
 /* ******************* */
 .section-two {
-    grid-area: section-two;
-    height: 788px;
-
+     grid-area: section-two;
     display:grid;
     grid-template-areas: 
         "section-heading section-heading section-heading"
         "section-two-card section-two-card section-two-card"
         "section-two-card section-two-card section-two-card";
+    gap: 0px 25px;
+    padding-bottom: 31.5px;
 }
 
 
 .section-heading {
     grid-area: section-heading;
-}
+    padding-bottom: 70px;
+   }
 
 .section-two .section-heading a {
     color: #6941C6;
@@ -195,21 +196,34 @@ nav>div>a {
     font-weight: 400;
     text-align: center;
     font-size: 20px;
-    line-height: 20px;
-    margin-top: 25px;
     line-height: 25px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+ }
 
-}
+ .section-two-card {
+    padding-bottom: 50px;
+   }
 
-.section-two-card {
-    grid-area: section-two-card;
-}
-
-.section-two img {
+.section-two-card img{
+    display:block;
+    margin:auto;
     background-color: #7F56D9;
     padding: 13px;
     border-radius: 10px;
  }
+
+ .section-two-card h3{
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 0.1px;
+    margin-top: 22px;
+    margin-bottom: 10px
+  }
+
+ .section-two-card p {
+    text-align: center;  
+  }
 
 /* ********************** */
  /* SECTION TRHEE STYLING */
@@ -249,6 +263,8 @@ nav>div>a {
 
 .section-six img {
     background-color: #7F56D9 ;
+    padding: 13px;
+    border-radius: 10px;
 }
 
 /* ************* */
