@@ -160,7 +160,7 @@ nav>div>a {
      grid-area: section-two;
     display:grid;
     grid-template-areas: 
-        "section-heading section-heading section-heading"
+        "section-two-heading section-two-heading section-two-heading"
         "section-two-card section-two-card section-two-card"
         "section-two-card section-two-card section-two-card";
     gap: 0px 25px;
@@ -168,12 +168,12 @@ nav>div>a {
 }
 
 
-.section-heading {
-    grid-area: section-heading;
+.section-two-heading {
+    grid-area: section-two-heading;
     padding-bottom: 70px;
    }
 
-.section-two .section-heading a {
+.section-two .section-two-heading a {
     color: #6941C6;
     font-weight: 600;
     display: block;
@@ -181,7 +181,7 @@ nav>div>a {
     margin-top: 100px;
 }
 
-.section-two .section-heading h2 {
+.section-two .section-two-heading h2 {
     text-align: center;
     font-weight: 600;
     color: #181D27;
@@ -191,7 +191,7 @@ nav>div>a {
     margin-bottom: 0px
 }
 
-.section-two .section-heading p {
+.section-two .section-two-heading p {
     color: #535862;
     font-weight: 400;
     text-align: center;
@@ -234,6 +234,69 @@ nav>div>a {
     height: 640px;
 }
 
+.section-three article { 
+    width: 1216px;
+    height: 448px;
+    margin: 100px 0;
+    background-color: #53389E;
+    color: white; 
+    border-radius: 25px;
+
+}
+
+.section-three-left {
+    width: 608px;
+    height: 306px;
+    float:left;
+    margin: 70px 64px;
+ }
+
+ .section-three-left h2 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 37px;
+    letter-spacing: 0.8px;
+ }
+
+ .section-three-left a {
+      font-size: 18px;
+      letter-spacing: 0.6px;
+ 
+ }
+
+ .section-three-left p {
+     font-weight: 400;
+     color: #E9D7FE;
+     margin-top: 12px;
+ }
+
+.section-three-right img{
+    float:right;
+    border-radius: 0 25px 25px 0;
+}
+
+.dot-active {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin-right: 13px;
+  margin-top: 20px;
+  display: inline-block;
+  background-color: white;
+  cursor: pointer;
+ }
+
+ .dot-inactive {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-right: 13px;
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #9E77ED;
+    cursor: pointer; }
+
 /* ********************* */
  /* SECTION FOUR STYLING */
  /* ******************** */
@@ -258,10 +321,41 @@ nav>div>a {
 .section-six {
     grid-area: section-six;
     /* background-color: azure; */
-    height: 676px;
+    display: grid;
+    grid-template-areas: 
+    "section-six-heading section-six-heading section-six-heading section-six-heading"
+    "section-six-card section-six-card section-six-card section-six-card " ;
+
 }
 
-.section-six img {
+.section-six-heading {
+    grid-area: section-six-heading;
+    margin-top: 105px;
+    margin-bottom: 105px
+}
+.section-six-heading a {
+    color: #6941C6;
+    font-weight: 600;
+}
+
+.section-six-heading h2 {
+    font-size: 36px;
+    margin-top: 12px;
+    margin-bottom: 13px;
+}
+
+.section-six-heading p {
+    font-size: 20px;
+    letter-spacing: 0.3px;
+}
+
+.section-six-card {
+    background-color: #FAFAFA;
+    width: 286px;
+    height: 290px;
+}
+
+.section-six-card img {
     background-color: #7F56D9 ;
     padding: 13px;
     border-radius: 10px;
