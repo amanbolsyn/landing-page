@@ -473,13 +473,13 @@ nav>div>a {
     grid-template-areas: 
     "section-six-heading section-six-heading section-six-heading section-six-heading"
     "section-six-card section-six-card section-six-card section-six-card " ;
-
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0px 40px;
 }
 
 .section-six-heading {
     grid-area: section-six-heading;
-    margin-top: 105px;
-    margin-bottom: 105px
+    margin-top: 103px;
 }
 .section-six-heading a {
     color: #6941C6;
@@ -499,7 +499,8 @@ nav>div>a {
 
 .section-six-card {
     background-color: #FAFAFA;
-    width: 286px;
+    margin: 74px 0;
+    padding-left: 16px;
     height: 290px;
 }
 
@@ -507,6 +508,25 @@ nav>div>a {
     background-color: #7F56D9 ;
     padding: 13px;
     border-radius: 10px;
+}
+
+.section-six-card h3 {
+    margin-top: 64px;
+    margin-bottom: 0px;
+}
+
+.section-six-card p {
+    font-weight: 400;
+    color:#535862;
+    margin-top:15px;
+}
+
+.section-six-card a {
+    display: inline-block; 
+    margin-top: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #6941C6;
 }
 
 /* ************* */
