@@ -303,8 +303,104 @@ nav>div>a {
 .section-four {
     grid-area: section-four;
     /* background-color: blue; */
-    height: 992px;
+    display: grid;
+    grid-template-areas: 
+    "section-four-heading section-four-heading section-four-heading"
+    "section-four-card section-four-card section-four-card"
+    "section-four-button section-four-button section-four-button ";
+    gap: 0 30px;
 }
+
+.section-four-heading {
+    grid-area: section-four-heading;
+    text-align: center;
+}
+
+.section-four-heading  a {
+    display: block;
+    margin-top: 105px;
+    font-weight: 600;
+    color: #6941C6;
+}
+
+.section-four-heading h2{
+    font-size: 36px;
+    margin-top: 12px;
+    margin-bottom: 25px;
+}
+
+.section-four-heading p {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    display: block;
+    width: 800px;
+    margin:auto;
+    color: #535862;
+    margin-bottom: 70px;
+}
+
+.secton-four-card {
+    grid-area: section-four-card;
+}
+
+.section-four-card a {
+    font-size: 14px;
+    display: block;
+    color: #6941C6;
+    font-weight: 600;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    
+}
+
+.section-four-card h3 {
+    font-size: 24px;
+    letter-spacing: 0.2px;
+    display: inline;
+}
+
+.section-four-card h3+img{
+    float: right;
+}
+
+.section-four-card p {
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    line-height: 23px;
+    margin-top: 10px;
+}
+
+.section-four-card .project-duration {
+  font-size: 14px;
+  font-weight:600 ;
+  color: #181D27;
+  margin-top: 28px;
+  margin-left: 2px;
+  margin-bottom: 0px;
+}
+
+.section-four-card .project-date {
+    font-weight: 400;
+    color: #535862;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+.section-four-button {
+  grid-area: section-four-button;
+  margin: 78px auto;
+  border: none;
+  color: #FFFFFF;
+  background-color: #7F56D9;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 0.9rem  1.3rem;
+  border-radius: 0.4rem;
+  margin-bottom: 92px;
+
+} 
+
+
 
 /* ********************* */
  /* SECTION FIVE STYLING */
