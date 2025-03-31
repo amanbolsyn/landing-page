@@ -1,7 +1,7 @@
 html {
     width: 100vw;
     max-width: 1440px;
-    /* margin:auto; */
+    margin:auto;
     font-family: 'Inter';
 
     /* helps to crate smooth srolling */
@@ -28,8 +28,9 @@ html {
 .header {
     width: 84.5%;
     background-color: white;
-    position: fixed;
+    position: sticky;
     grid-area: header;
+    top: 0;
     height: 80px;
     padding: 0 110px;
 }
@@ -129,9 +130,8 @@ nav>div>a {
 
 }
 
-.section-one button {
-    background-color: white;
-    cursor: pointer;
+.section-one a button {
+     cursor: pointer;
     box-sizing: border-box;
     font-size: 18px;
     height: 3.8rem;
@@ -139,7 +139,7 @@ nav>div>a {
     margin-top: 30px;
 }
 
-.section-one button:nth-of-type(1) {
+.section-one a:nth-of-type(1) button {
     background-color: rgba(127, 86, 217, 1);
     border: 0.11rem rgba(127, 86, 217, 1) solid;
     color: white;
@@ -148,7 +148,8 @@ nav>div>a {
 
 }
 
-.section-one button:nth-of-type(2) {
+.section-one a:nth-of-type(2) button{
+    background-color:  white;
     border: 0.11rem rgba(213, 215, 218, 1) solid;
     font-size: 18px;
     width: 7.7rem;
@@ -389,9 +390,13 @@ nav>div>a {
     margin-top: 5px;
     margin-left: 2px;
 }
+
 .section-four-button {
-  grid-area: section-four-button;
-  margin: 78px auto;
+    grid-area: section-four-button;
+    margin: 78px auto;
+    height: 60px;
+}
+.section-four-button button{
   border: none;
   color: #FFFFFF;
   background-color: #7F56D9;
@@ -566,4 +571,5 @@ nav>div>a {
 
 .footer-right img {
     padding-left: 20px;
+    cursor: pointer;
 }
