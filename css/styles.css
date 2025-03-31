@@ -1,5 +1,5 @@
 html {
-    width: 100wh;
+    width: 100vw;
     max-width: 1440px;
     /* margin:auto; */
     font-family: 'Inter';
@@ -185,7 +185,6 @@ nav>div>a {
     text-align: center;
     font-weight: 600;
     color: #181D27;
-    letter-spacing: -2%;
     font-size: 37px;
     margin-top: 12px;
     margin-bottom: 0px
@@ -362,6 +361,7 @@ nav>div>a {
 
 .section-four-card h3+img{
     float: right;
+    cursor: pointer;
 }
 
 .section-four-card p {
@@ -397,6 +397,7 @@ nav>div>a {
   padding: 0.9rem  1.3rem;
   border-radius: 0.4rem;
   margin-bottom: 92px;
+  cursor: pointer;
 
 } 
 
@@ -409,7 +410,58 @@ nav>div>a {
     grid-area: section-five;
     /* background-color: blueviolet; */
     height: 878px;
+
 }
+.section-five div {
+    width: 768px;
+    margin:auto;
+}
+.section-five>h2{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    font-size: 37px;
+    font-weight: 600;
+}
+
+.section-five>p {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    color: #535862;
+    margin-bottom: 45px
+}
+
+.section-five article {
+    padding: 21.8px 0;
+   border-top: 1px #E9EAEB solid;
+}
+
+.section-five article:nth-of-type(1) {
+    border-top: none;
+}
+
+.section-five article h3 {
+    display: inline-block;
+    margin-top: 0px;
+    font-weight: 500;
+    color: #181D27;
+}
+
+.section-five article img {
+    float: right;
+    cursor: pointer;
+}
+
+.section-five article p {
+    font-weight: 400;
+    margin-top: 0px;
+    color: #535862;
+    margin-right: 50px;
+}
+
+
+
 
 /* ******************** */
  /* SECTION SIX STYLING */
