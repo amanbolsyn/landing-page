@@ -1,7 +1,7 @@
 html {
     width: 100vw;
     max-width: 1440px;
-    margin:auto;
+    /* margin:auto; */
     font-family: 'Inter';
 
     /* helps to crate smooth srolling */
@@ -17,7 +17,7 @@ html {
     grid-template-areas:
         /* body grid layout scheme */
         "header"
-        "main-container"
+        "main-page-container"
         "footer";
     margin: 0px;
 }
@@ -78,8 +78,8 @@ nav>div>a {
 }
 
 /* Main container grid */
-.main-container {
-    grid-area: main-container;
+.main-page-container {
+    grid-area: main-page-container;
     display: grid;
     grid-template-areas:
         /* body grid layout scheme */
@@ -309,10 +309,10 @@ nav>div>a {
     display: grid;
     grid-template-areas: 
     "section-four-heading section-four-heading section-four-heading"
-    "section-four-card section-four-card section-four-card"
+    "project-card project-card project-card"
     "section-four-button section-four-button section-four-button ";
     gap: 0 30px;
-}
+ }
 
 .section-four-heading {
     grid-area: section-four-heading;
@@ -343,11 +343,7 @@ nav>div>a {
     margin-bottom: 70px;
 }
 
-.secton-four-card {
-    grid-area: section-four-card;
-}
-
-.section-four-card a {
+.project-card a {
     font-size: 14px;
     display: block;
     color: #6941C6;
@@ -357,25 +353,25 @@ nav>div>a {
     
 }
 
-.section-four-card h3 {
+.project-card h3 {
     font-size: 24px;
     letter-spacing: 0.2px;
     display: inline;
 }
 
-.section-four-card h3+img{
+.project-card h3+img{
     float: right;
     cursor: pointer;
 }
 
-.section-four-card p {
+.project-card p {
     font-size: 16px;
     letter-spacing: 0.1px;
     line-height: 23px;
     margin-top: 10px;
 }
 
-.section-four-card .project-duration {
+.project-card .project-duration {
   font-size: 14px;
   font-weight:600 ;
   color: #181D27;
@@ -384,7 +380,7 @@ nav>div>a {
   margin-bottom: 0px;
 }
 
-.section-four-card .project-date {
+.project-card .project-date {
     font-weight: 400;
     color: #535862;
     margin-top: 5px;
@@ -396,6 +392,7 @@ nav>div>a {
     margin: 78px auto;
     height: 60px;
 }
+
 .section-four-button button{
   border: none;
   color: #FFFFFF;
@@ -573,3 +570,85 @@ nav>div>a {
     padding-left: 20px;
     cursor: pointer;
 }
+
+
+
+/* ******************** */
+/* PROJECT PAGE STYLING */
+/* ******************** */
+.projects-body-container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "projects-page-container"
+    "footer";
+    margin:0px;
+}
+
+
+.projects-page-container{
+    grid-area: projects-page-container;
+    display:grid;
+    grid-template-areas:
+    "projects-section-heading projects-section-heading projects-section-heading"
+    "project-card project-card project-card" 
+    "project-card project-card project-card" 
+    "project-card project-card project-card";
+    gap: 40px 30px;
+    padding: 0 110px;
+ }
+
+ .projects-page-container{
+    margin-bottom: 80px;
+ }
+
+.projects-section-heading {
+    grid-area: projects-section-heading;
+    margin-top: 96px;
+    margin-bottom:20px;
+}
+
+.projects-section-heading>a {
+    display:block;
+    text-align: center;
+    font-weight: 600;
+    color: #6941C6
+}
+
+.projects-section-heading h1 {
+    text-align: center;
+    font-size:37px ;
+    font-weight: 600;
+    margin-top:15px;
+}
+
+.projects-section-heading p {
+    text-align: center;
+    font-weight: 400;
+    color: #535862;
+    font-size: 21px;
+    width: 720px;
+    margin: auto;
+}
+
+.filter {
+    border-bottom: 1px  solid;
+    border-bottom-color: #E9EAEB;
+    margin-top: 70px;
+    padding-bottom: 15px;
+}
+
+.filter a {
+    padding: 0 5px;
+    margin-right: 14px;
+    color:#717680;
+    cursor: pointer;
+}
+
+.filter .filter-active {
+  padding-bottom: 15px;
+  border-bottom: 2px #6941C6 solid;
+  color: #6941C6;
+}
+
+
