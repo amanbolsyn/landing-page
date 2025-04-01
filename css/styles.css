@@ -1,7 +1,7 @@
 html {
     width: 100vw;
     max-width: 1440px;
-    /* margin:auto; */
+    margin:auto;
     font-family: 'Inter';
 
     /* helps to crate smooth srolling */
@@ -51,6 +51,7 @@ html {
     margin-left: 8px;
 }
 
+
 #nav-right {
     float: right;
     font-size: 16px;
@@ -62,11 +63,16 @@ html {
     bottom: 7px;
 }
 
+
+
 #nav-right img {
     width: 24px;
     height: 24px;
     cursor: pointer;
+    color: #6941C6;
 }
+
+
 
 /* links inside nav element  */
 nav>div>a {
@@ -148,12 +154,20 @@ nav>div>a {
 
 }
 
+.section-one a:nth-of-type(1) button:hover {
+    background-color: #6941C6;
+}
+
 .section-one a:nth-of-type(2) button{
     background-color:  white;
     border: 0.11rem rgba(213, 215, 218, 1) solid;
     font-size: 18px;
     width: 7.7rem;
     margin-left: 0.4rem;
+}
+
+.section-one a:nth-of-type(2) button:hover {
+    background-color: #FAFAFA;
 }
 
 
@@ -406,6 +420,10 @@ nav>div>a {
 
 } 
 
+.section-four-button button:hover {
+    background-color: #6941C6;
+}
+
 
 
 /* ********************* */
@@ -440,6 +458,7 @@ nav>div>a {
 .section-five article {
     padding: 21.8px 0;
    border-top: 1px #E9EAEB solid;
+   cursor: pointer;
 }
 
 .section-five article:nth-of-type(1) {
@@ -455,7 +474,6 @@ nav>div>a {
 
 .section-five article img {
     float: right;
-    cursor: pointer;
 }
 
 .section-five article p {
@@ -507,6 +525,7 @@ nav>div>a {
     margin: 74px 0;
     padding-left: 16px;
     height: 290px;
+    cursor: pointer;
 }
 
 .section-six-card img {
@@ -569,6 +588,10 @@ nav>div>a {
 .footer-right img {
     padding-left: 20px;
     cursor: pointer;
+    opacity:1;
+}
+
+.footer-right img:hover {
 }
 
 
