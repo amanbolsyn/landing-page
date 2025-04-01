@@ -136,29 +136,30 @@ nav>div>a {
 
 }
 
-.section-one a button {
-     cursor: pointer;
+.section-one .button {
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
     box-sizing: border-box;
-    font-size: 18px;
-    height: 3.8rem;
+    padding:1rem;
     border-radius: 0.8rem;
     margin-top: 30px;
 }
 
-.section-one a:nth-of-type(1) button {
+.section-one .button:nth-of-type(1) {
     background-color: rgba(127, 86, 217, 1);
     border: 0.11rem rgba(127, 86, 217, 1) solid;
     color: white;
     font-size: 18px;
     width: 9.2rem;
-
 }
 
-.section-one a:nth-of-type(1) button:hover {
+.section-one .button:nth-of-type(1):hover {
     background-color: #6941C6;
 }
 
-.section-one a:nth-of-type(2) button{
+.section-one .button:nth-of-type(2){
     background-color:  white;
     border: 0.11rem rgba(213, 215, 218, 1) solid;
     font-size: 18px;
@@ -166,7 +167,7 @@ nav>div>a {
     margin-left: 0.4rem;
 }
 
-.section-one a:nth-of-type(2) button:hover {
+.section-one .button:nth-of-type(2):hover {
     background-color: #FAFAFA;
 }
 
@@ -404,16 +405,16 @@ nav>div>a {
 .section-four-button {
     grid-area: section-four-button;
     margin: 78px auto;
-    height: 60px;
 }
 
-.section-four-button button{
+.section-four-button{
+  text-decoration: none;
   border: none;
   color: #FFFFFF;
   background-color: #7F56D9;
   font-weight: 600;
   font-size: 16px;
-  padding: 0.9rem  1.3rem;
+  padding:0.9rem  1.3rem;
   border-radius: 0.4rem;
   margin-bottom: 92px;
   cursor: pointer;
