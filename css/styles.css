@@ -65,6 +65,9 @@ html {
     margin-right: 16px;
 }
 
+#nav-right a:not(#theme):hover{
+  color:#53389E
+}
 #nav-right a:hover path{
    stroke: #6941C6;
    cursor: pointer;
@@ -420,7 +423,7 @@ nav div a {
 
 } 
 
-.section-four-button button:hover {
+.section-four-button:hover {
     background-color: #6941C6;
 }
 
@@ -561,7 +564,7 @@ nav div a {
     background-color: #53389E;
     /* height: 168px; */
     color: white;
-    padding: 0px 110px;
+    padding:0px 110px;
     padding-top: 65px;
     display: grid;
     grid-template-areas:
