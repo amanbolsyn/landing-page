@@ -493,6 +493,7 @@ nav div a {
  /* SECTION SIX STYLING */
  /* ******************* */
 .section-six {
+    margin-bottom: 71px;
     grid-area: section-six;
     /* background-color: azure; */
     display: grid;
@@ -525,7 +526,8 @@ nav div a {
 
 .section-six-card {
     background-color: #FAFAFA;
-    margin: 74px 0;
+    margin-top: 54px;
+    padding-top: 20px;
     padding-left: 16px;
     height: 290px;
     cursor: pointer;
