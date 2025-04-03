@@ -51,7 +51,7 @@
     /* ********************* */
     .projects-section-heading {
         margin-top: 65px;
-        margin-bottom: 8px;
+        margin-bottom:14px;
      }
 
     .projects-section-heading a {
@@ -91,6 +91,7 @@
         grid-template-columns: 1fr;
         padding: 0px;
         column-gap: 0px;
+        row-gap: 35px;
     }
 
     .project-1 {
@@ -138,7 +139,41 @@
         max-width:inherit;
         height:240px ;
         object-fit:cover;
-        border-radius: 15px;;
+        border-radius: 18px;;
     }
+
+    .project-card a {
+        margin-bottom: 12px;
+    }
+
+    .project-card h3 {
+        font-size: 20px;
+    }
+
+    .project-card p {
+        margin-top: 14px;
+        max-height: 48px;
+        white-space: normal; /* Allows wrapping */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Limits to 2 lines */
+        -webkit-box-orient: vertical;
+    }
+
+    .project-card h3+img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .project-card .project-duration {
+       margin-top: 24px; 
+    }
+
+
+    /* ************** */
+    /* FOOTER STYLING */
+    /* ************** */
     
 }
