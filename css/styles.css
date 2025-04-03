@@ -1,9 +1,8 @@
 html {
-    width: 100vw;
-    max-width: 1440px;
     margin:auto;
     font-family: 'Inter';
-
+    width: 100%;
+    max-width: 1440px;
     /* helps to crate smooth srolling */
     scroll-behavior: smooth;
 
@@ -19,7 +18,7 @@ html {
         "header"
         "main-page-container"
         "footer";
-    margin: 0px;
+    margin: 0;
 }
 
 /* ************************* */
@@ -677,4 +676,25 @@ nav div a {
   color: #6941C6;
 }
 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 375px) and (max-width: 599) {
+}
+
+@media only screen and (min-width: 600px) {
+
+ }
+
+
+
+@media only screen and (min-width: 1440px) {
+
+
+    html {
+        width: 100vw;
+        max-width: 1440px;
+    }
+}
+ 
+ 
 
