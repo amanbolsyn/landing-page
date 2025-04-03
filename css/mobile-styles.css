@@ -129,9 +129,16 @@
         grid-area: 10/span 2;
     }
 
+    .project-card {
+        max-width:92.5vw;
+        margin: auto;
+    }
 
     article.project-card img:first-of-type {
-        max-width: 100vw;
+        max-width:92.5vw;
+        height:240px ;
+        object-fit:cover;
+        border-radius: 15px;;
     }
     
 }
