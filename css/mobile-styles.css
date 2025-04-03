@@ -49,6 +49,10 @@
     /* ********************* */
     /* PROJECTS PAGE STYLING */
     /* ********************* */
+
+    .projects-page-container {
+        margin-bottom: 55px;
+    }
     .projects-section-heading {
         margin-top: 65px;
         margin-bottom:14px;
@@ -176,4 +180,35 @@
     /* FOOTER STYLING */
     /* ************** */
     
+    .footer {
+        padding:0px;
+        grid-template-areas: 
+        "footer-right"
+        "footer-left";
+    }
+
+    div.footer-right {
+        grid-area: 1/span 2;
+        padding-bottom: 0px;
+        padding-top: 30px;
+        margin-top:50px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .footer-right svg {
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
+
+
+    div.footer-left {
+        border:none;
+        grid-area: 2/span 2;
+        padding-top: 0px;
+        margin-top:20px;
+        margin-left:15px;
+        margin-bottom:5px;
+    }
 }
