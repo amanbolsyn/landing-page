@@ -5,8 +5,9 @@
 
 
     body {
-       max-width: 100vw;
-     }
+        max-width: 100vw;
+    }
+
     /* ************** */
     /* HEADER STYLING */
     /* ************** */
@@ -17,12 +18,12 @@
     }
 
     .header div {
-         margin-top: 25px;
+        margin-top: 25px;
     }
 
     #nav-left {
         font-size: 20px;
-        margin-left:12px;
+        margin-left: 12px;
     }
 
     #nav-left img {
@@ -44,6 +45,108 @@
     /* ***************** */
     /* MAIN PAGE STYLING */
     /* ***************** */
+
+
+    /* ****************** */
+    /* SECTION ONE SYLING */
+    /* ****************** */
+
+    .section-one article {
+        background-image: none;
+    }
+
+
+    /* ****************** */
+    /* SECTION TWO SYLING */
+    /* ****************** */
+
+    .section-two {
+        grid-column: 1fr;
+    }
+
+    .section-two-card-1 {
+        grid-area: 2/span 1;
+    }
+
+    .section-two-card-2 {
+        grid-area: 3/span 1;
+    }
+
+    .section-two-card-3 {
+        grid-area: 4/span 1;
+    }
+
+    .section-two-card-4 {
+        grid-area: 5/span 1;
+    }
+
+    .section-two-card-5 {
+        grid-area: 6/span 1;
+    }
+
+    .section-two-card-6 {
+        grid-area: 7/span 1;
+    }
+
+    /* ******************** */
+    /* SECTION THREE SYLING */
+    /* ******************** */
+
+
+    /* ******************* */
+    /* SECTION FOUR SYLING */
+    /* ******************* */
+    .section-four {
+        grid-template-columns: 1fr; 
+    }
+
+    .section-four-heading {
+        grid-area: 1/span 1;
+        margin: auto;
+    }
+    .section-four-card-1 {
+        grid-area: 2/span 1;
+        margin: auto;
+    }
+    .section-four-card-2 {
+        grid-area: 3/span 1;
+        margin: auto;
+    }
+    .section-four-card-3 {
+        grid-area: 4/span 1;
+        margin: auto;
+    }
+
+    .section-four-button {
+        grid-area: 5/span 1;
+    }
+
+
+    /* ******************* */
+    /* SECTION FIVE SYLING */
+    /* ******************* */
+
+
+    /* ****************** */
+    /* SECTION SIX SYLING */
+    /* ****************** */
+
+    .section-six {
+        grid-column: 1fr;
+    }
+
+    .section-six-card-1 {
+        grid-area: 2/span 1;
+    }
+    .section-six-card-2 {
+        grid-area: 3/span 1;
+    }
+    .section-six-card-3 {
+        grid-area: 4/span 1;
+    }
+    .section-six-card-4 {
+        grid-area: 5/span 1;
+    }
     
 
     /* ********************* */
@@ -53,10 +156,11 @@
     .projects-page-container {
         margin-bottom: 55px;
     }
+
     .projects-section-heading {
         margin-top: 65px;
-        margin-bottom:14px;
-     }
+        margin-bottom: 14px;
+    }
 
     .projects-section-heading a {
         font-size: 14px;
@@ -66,7 +170,7 @@
         font-size: 31px;
         width: 70%;
         margin: auto;
-        margin-top:14px;
+        margin-top: 14px;
         letter-spacing: 0.4px;
     }
 
@@ -75,20 +179,20 @@
         line-height: 27px;
         width: 90%;
         margin: auto;
-        margin-top:18px;
-     }
+        margin-top: 18px;
+    }
 
 
-     div.filter{
+    div.filter {
         margin: 0 15px;
         margin-top: 50px;
-     }
+    }
 
-     div.filter a {
+    div.filter a {
         font-weight: 600;
         font-size: 16px;
         margin-right: 12px;
-     }
+    }
 
 
     .projects-page-container {
@@ -134,16 +238,21 @@
         grid-area: 10/span 2;
     }
 
+    /* ******************** */
+    /* PROJECT CARD STYLING */
+    /* ******************** */
     .project-card {
-        max-width:92.5vw;
+        width: 92.5vw;
+        max-width: 384px;
         margin: auto;
     }
 
     article.project-card img:first-of-type {
-        max-width:inherit;
-        height:240px ;
-        object-fit:cover;
-        border-radius: 18px;;
+        max-width: inherit;
+        height: 240px;
+        object-fit: cover;
+        border-radius: 18px;
+        ;
     }
 
     .project-card a {
@@ -157,12 +266,14 @@
     .project-card p {
         margin-top: 14px;
         max-height: 48px;
-        white-space: normal; /* Allows wrapping */
+        white-space: normal;
+        /* Allows wrapping */
         overflow: hidden;
         text-overflow: ellipsis;
-    
+
         display: -webkit-box;
-        -webkit-line-clamp: 2; /* Limits to 2 lines */
+        -webkit-line-clamp: 2;
+        /* Limits to 2 lines */
         -webkit-box-orient: vertical;
     }
 
@@ -172,26 +283,26 @@
     }
 
     .project-card .project-duration {
-       margin-top: 24px; 
+        margin-top: 24px;
     }
 
 
     /* ************** */
     /* FOOTER STYLING */
     /* ************** */
-    
+
     .footer {
-        padding:0px;
-        grid-template-areas: 
-        "footer-right"
-        "footer-left";
+        padding: 0px;
+        grid-template-areas:
+            "footer-right"
+            "footer-left";
     }
 
     div.footer-right {
         grid-area: 1/span 2;
         padding-bottom: 0px;
         padding-top: 30px;
-        margin-top:50px;
+        margin-top: 50px;
         margin-left: 15px;
         margin-right: 15px;
     }
@@ -201,14 +312,12 @@
         margin-right: 20px;
     }
 
-
-
     div.footer-left {
-        border:none;
+        border: none;
         grid-area: 2/span 2;
         padding-top: 0px;
-        margin-top:20px;
-        margin-left:15px;
-        margin-bottom:5px;
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-bottom: 5px;
     }
 }
