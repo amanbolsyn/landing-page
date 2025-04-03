@@ -1,0 +1,129 @@
+/* ************************************************************* */
+/* Small devices (small and large phones, 375px and up to 599px) */
+/* ************************************************************* */
+@media only screen and (min-width: 375px) and (max-width: 599px) {
+    /* ************** */
+    /* HEADER STYLING */
+    /* ************** */
+    .header {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .header div {
+         margin-top: 24px;
+    }
+
+    #nav-left {
+        font-size: 20px;
+        margin-left:12px;
+    }
+
+    #nav-left img {
+        margin-right: 10px;
+    }
+
+    #nav-right {
+        margin-right: 30px;
+    }
+
+    #nav-right a:not(#burger-menu) {
+        display: none;
+    }
+
+    #burger-menu {
+        display: block;
+    }
+
+    /* ***************** */
+    /* MAIN PAGE STYLING */
+    /* ***************** */
+    
+
+    /* ********************* */
+    /* PROJECTS PAGE STYLING */
+    /* ********************* */
+
+    .projects-section-heading {
+        margin-top: 58px;
+    }
+
+    .projects-section-heading a {
+        font-size: 14px;
+    }
+
+    .projects-section-heading h1 {
+        font-size: 31px;
+        width: 70%;
+        margin: auto;
+        margin-top:14px;
+        letter-spacing: 0.4px;
+    }
+
+    .projects-section-heading p {
+        font-size: 18px;
+        line-height: 27px;
+        width: 90%;
+        margin: auto;
+        margin-top:18px;
+     }
+
+
+     div.filter{
+        margin: 0 15px;
+        margin-top: 50px;
+     }
+
+     div.filter a {
+        font-weight: 600;
+        font-size: 16px;
+        margin-right: 12px;
+     }
+
+     
+
+    .projects-page-container {
+        grid-template-columns: 1fr;
+        padding: 0px;
+        column-gap: 0px;
+    }
+
+    .project-1 {
+        grid-area: 2/span 1;
+    }
+
+    .project-2 {
+        grid-area: 3/span 1;
+    }
+
+    .project-3 {
+        grid-area: 4/span 1;
+    }
+
+    .project-4 {
+        grid-area: 5/span 1;
+    }
+
+    .project-5 {
+        grid-area: 6/span 1;
+    }
+
+    .project-6 {
+        grid-area: 7/span 1;
+    }
+
+    .project-7 {
+        grid-area: 8/span 1;
+    }
+
+    .project-8 {
+        grid-area: 9/span 1;
+    }
+
+    .project-9 {
+        grid-area: 10/span 2;
+    }
+
+
+    
+}
