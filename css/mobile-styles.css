@@ -135,7 +135,7 @@
     }
 
     article.project-card img:first-of-type {
-        max-width:92.5vw;
+        max-width:inherit;
         height:240px ;
         object-fit:cover;
         border-radius: 15px;;
