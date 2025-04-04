@@ -83,7 +83,7 @@
 
     .section-one a.button{
         display: block;
-        min-width: 343px;     /* CHANGE LATER CHANGE LATER */    /* CHANGE LATER CHANGE LATER */    /* CHANGE LATER CHANGE LATER */
+        width: 92.5vw;
         padding-top: 12px;
         padding-bottom: 12px;
         margin-left: 0px;
