@@ -3,10 +3,9 @@
 /* ************************************************************* */
 @media only screen and (min-width: 375px) and (max-width: 599px) {
 
-
-    body {
-        max-width: 100vw;
-    }
+   html {
+    max-width: 100vw;
+   }
 
     /* ************** */
     /* HEADER STYLING */
@@ -49,19 +48,29 @@
      .main-page-container {
         padding: 0px;
         padding-top:28px;
-        margin: auto;
+        margin: 0px 15px;
         width: 92vw;
      }
 
      section {
         width: 100vw;
      }
+
+     section article {
+        width: 100vw;
+     }
+
     /* ****************** */
     /* SECTION ONE SYLING */
     /* ****************** */
 
+
+    .section-one{
+        height:500px;
+    }
     .section-one article {
         background-image: none;
+        height:inherit;
     }
 
     .section-one article h1 {
@@ -76,14 +85,17 @@
         font-size: 18px;
         /* CHANGE */
         width:355px; 
+        margin-bottom: 35px;
     }
 
-    .section-one article a {
+    .section-one a.button{
         display: block;
+        min-width: 343px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        margin-left: 0px;
+        margin-top: 10px;
     }
-
-
-
 
     /* ****************** */
     /* SECTION TWO SYLING */
@@ -91,10 +103,30 @@
 
     .section-two {
         grid-column: 1fr;
+        grid-template-areas: 
+        "section-two-heading"
+        "section-two-card-1"
+        "section-two-card-2"
+        "section-two-card-3"
+        "section-two-card-4"
+        "section-two-card-5"
+        "section-two-card-6";
+    column-gap: 0px;
+    height: 1414px;
+    }
+
+    .section-two-card {
+        width:100vw;
     }
 
     .section-two-heading {
         grid-area: 1/span 1;
+    }
+
+    .section-two-heading a{
+        font-size: 14px;
+        margin:auto;
+        margin-top: 35px;
     }
 
     .section-two-card-1 {
@@ -123,15 +155,32 @@
 
     /* ******************** */
     /* SECTION THREE SYLING */
-    /* ******************** */
 
+    .section-three article {
+        width: 100vw;
+    }
+
+    .section-three div {
+        width: 100vw;
+        margin:0px;
+    }
+
+    .section-three div.section-three-right {
+        width: 100vw;
+    }
+    /* ******************** */
 
     /* ******************* */
     /* SECTION FOUR SYLING */
     /* ******************* */
     .section-four {
         grid-template-columns: 1fr; 
+        column-gap: 0px;
         margin:auto;
+    }
+
+    .section-four div {
+        width: 100vw;
     }
 
     .section-four-heading {
@@ -155,7 +204,10 @@
     /* ******************* */
     /* SECTION FIVE SYLING */
     /* ******************* */
-
+   
+    .section-five div {
+        width: 100vw;
+    }
 
     /* ****************** */
     /* SECTION SIX SYLING */
@@ -163,6 +215,13 @@
 
     .section-six {
         grid-column: 1fr;
+        grid-template-areas: 
+        "section-six-heading"
+        "section-six-card-1"
+        "section-six-card-2"
+        "section-six-card-3"
+        "section-six-card-4";
+        column-gap: 0px;
     }
 
     .section-six-card-1 {
