@@ -321,3 +321,9 @@
         margin-bottom: 5px;
     }
 }
+
+@media (pointer: coarse) {
+    a:hover {
+      all: revert-layer;
+    }
+  }
