@@ -105,18 +105,19 @@
         "section-two-card-5"
         "section-two-card-6";
     column-gap: 0px;
-    height: 1414px;
     width: inherit;
     }
 
     .section-two-card {
         width: inherit;
+        padding-bottom: 22px;
     }
 
     .section-two-heading {
         width: inherit;
         grid-area: 1/span 1;
-    }
+        padding-bottom: 44px;
+     }
 
     .section-two-heading a{
         font-size: 14px;
@@ -125,9 +126,32 @@
     }
 
     .section-two-heading h2 {
-        font-size:24px;
-        margin-top: 18px;
+        font-size:32px;
+        margin-top: 16px;
     }
+
+    .section-two-heading p {
+      margin-top: 15px;
+      font-size: 18.5px;
+      line-height: 29px;
+     }
+
+     .section-two-card img {
+        padding: 10px;
+     }
+
+     .section-two-card  h3 {
+        margin-top:20px;
+        margin-bottom: 0px;
+        font-size:18px;
+
+     }
+
+     .section-two-card p {
+        margin-top: 8px;
+        line-height: 23px;
+     }
+
 
     .section-two-card-1 {
         grid-area: 2/span 1;
