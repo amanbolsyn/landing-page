@@ -46,7 +46,16 @@
     /* MAIN PAGE STYLING */
     /* ***************** */
 
+     .main-page-container {
+        padding: 0px;
+        padding-top:28px;
+        margin: auto;
+        width: 92vw;
+     }
 
+     section {
+        width: 100vw;
+     }
     /* ****************** */
     /* SECTION ONE SYLING */
     /* ****************** */
@@ -55,6 +64,26 @@
         background-image: none;
     }
 
+    .section-one article h1 {
+        font-size: 36px;
+        padding: 0px;
+        /* CHANGE */
+        width:355px; 
+    }
+
+    .section-one article p {
+        padding: 0px;
+        font-size: 18px;
+        /* CHANGE */
+        width:355px; 
+    }
+
+    .section-one article a {
+        display: block;
+    }
+
+
+
 
     /* ****************** */
     /* SECTION TWO SYLING */
@@ -62,6 +91,10 @@
 
     .section-two {
         grid-column: 1fr;
+    }
+
+    .section-two-heading {
+        grid-area: 1/span 1;
     }
 
     .section-two-card-1 {
@@ -98,23 +131,20 @@
     /* ******************* */
     .section-four {
         grid-template-columns: 1fr; 
+        margin:auto;
     }
 
     .section-four-heading {
         grid-area: 1/span 1;
-        margin: auto;
     }
     .section-four-card-1 {
         grid-area: 2/span 1;
-        margin: auto;
     }
     .section-four-card-2 {
         grid-area: 3/span 1;
-        margin: auto;
     }
     .section-four-card-3 {
         grid-area: 4/span 1;
-        margin: auto;
     }
 
     .section-four-button {
