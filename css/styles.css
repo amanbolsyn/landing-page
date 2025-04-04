@@ -60,14 +60,6 @@ html {
     margin-right: 16px;
 }
 
-#nav-right a:not(#light-theme):hover {
-    color: #53389E
-}
-
-#nav-right a:hover path {
-    stroke: #6941C6;
-    cursor: pointer;
-}
 
 #burger-menu {
     display: none;
@@ -153,9 +145,6 @@ nav div a {
     width: 9.2rem;
 }
 
-.section-one a:nth-of-type(1):hover {
-    background-color: #6941C6;
-}
 
 .section-one a:nth-of-type(2) {
     background-color: white;
@@ -165,10 +154,6 @@ nav div a {
     margin-left: 0.4rem;
     color: #414651;
     font-weight: 600;
-}
-
-.section-one a:nth-of-type(2):hover {
-    background-color: #FAFAFA;
 }
 
 
@@ -189,18 +174,23 @@ nav div a {
 .section-two-card-1 {
     grid-area: section-two-card-1;
 }
+
 .section-two-card-2 {
     grid-area: section-two-card-2;
 }
+
 .section-two-card-3 {
     grid-area: section-two-card-3;
 }
+
 .section-two-card-4 {
     grid-area: section-two-card-4;
 }
+
 .section-two-card-5 {
     grid-area: section-two-card-5;
 }
+
 .section-two-card-6 {
     grid-area: section-two-card-6;
 }
@@ -350,11 +340,13 @@ nav div a {
 }
 
 .section-four-card-1 {
-    grid-area: section-four-card-1 ;
+    grid-area: section-four-card-1;
 }
+
 .section-four-card-2 {
     grid-area: section-four-card-2;
 }
+
 .section-four-card-3 {
     grid-area: section-four-card-3;
 }
@@ -455,10 +447,6 @@ nav div a {
 
 }
 
-.section-four-button:hover {
-    background-color: #6941C6;
-}
-
 
 
 /* ********************* */
@@ -541,12 +529,15 @@ nav div a {
 .section-six-card-1 {
     grid-area: section-six-card-1;
 }
+
 .section-six-card-2 {
     grid-area: section-six-card-2;
 }
+
 .section-six-card-3 {
     grid-area: section-six-card-3;
 }
+
 .section-six-card-4 {
     grid-area: section-six-card-4;
 }
@@ -638,9 +629,6 @@ nav div a {
     border-top: 0.2px white solid;
 }
 
-.footer-right svg:hover path {
-    fill: white;
-}
 
 .footer-right svg {
     cursor: pointer;
@@ -783,35 +771,41 @@ nav div a {
     .section-one article {
         background-image: none;
     }
-    
+
     /* ****************** */
     /* SECTION TWO SYLING */
     /* ****************** */
 
     .section-two {
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "section-two-heading section-two-heading"
-        "section-two-card-1 section-two-card-2"
-        "section-two-card-3 section-two-card-4"
-        "section-two-card-5 section-two-card-6"
-        "section-two-card-7 section-two-card-8";
+        grid-template-areas:
+            "section-two-heading section-two-heading"
+            "section-two-card-1 section-two-card-2"
+            "section-two-card-3 section-two-card-4"
+            "section-two-card-5 section-two-card-6"
+            "section-two-card-7 section-two-card-8";
     }
+
     .section-two-card-1 {
         grid-area: 2/span 1;
     }
+
     .section-two-card-2 {
         grid-area: 2/span 1;
     }
+
     .section-two-card-3 {
         grid-area: 3/span 1;
     }
+
     .section-two-card-4 {
         grid-area: 3/span 1;
     }
+
     .section-two-card-5 {
-        grid-area:4/span 1;
+        grid-area: 4/span 1;
     }
+
     .section-two-card-6 {
         grid-area: 4/span 1;
     }
@@ -822,7 +816,7 @@ nav div a {
 
     .section-three article {
         width: 80vw;
-        margin:auto;
+        margin: auto;
     }
 
     .section-three .section-three-left {
@@ -832,16 +826,17 @@ nav div a {
     .section-three .section-three-right {
         display: none;
     }
+
     /* ******************* */
     /* SECTION FOUR SYLING */
     /* ******************* */
 
     .section-four {
-        grid-template-columns: 1fr 1fr; 
-        grid-template-areas: 
-        "section-four-heading section-four-heading"
-        "section-four-card-1 section-four-card-2"
-        "sectin-four-card-3 section-four-card-3";
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "section-four-heading section-four-heading"
+            "section-four-card-1 section-four-card-2"
+            "sectin-four-card-3 section-four-card-3";
         column-gap: 0px;
         row-gap: 30px;
     }
@@ -850,14 +845,17 @@ nav div a {
         grid-area: 1/span 2;
         margin: auto;
     }
+
     .section-four-card-1 {
         grid-area: 2/span 1;
         margin: auto;
     }
+
     .section-four-card-2 {
         grid-area: 2/span 1;
         margin: auto;
     }
+
     .section-four-card-3 {
         grid-area: 3/span 2;
         margin: auto;
@@ -883,10 +881,10 @@ nav div a {
 
     .section-six {
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "section-six-heading section-six-heading"
-        "section-six-card-1 section-six-card-2"
-        "section-six-card-3 section-six-card-4";
+        grid-template-areas:
+            "section-six-heading section-six-heading"
+            "section-six-card-1 section-six-card-2"
+            "section-six-card-3 section-six-card-4";
         margin: auto;
         column-gap: 20px;
     }
@@ -895,16 +893,19 @@ nav div a {
         grid-area: 1/span 2;
     }
 
-    
+
     .section-six-card-1 {
         grid-area: 2/span 1;
     }
+
     .section-six-card-2 {
         grid-area: 2/span 1;
     }
+
     .section-six-card-3 {
         grid-area: 3/span 1;
     }
+
     .section-six-card-4 {
         grid-area: 3/span 1;
     }
@@ -916,13 +917,13 @@ nav div a {
     /* ********************* */
     .projects-page-container {
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "projects-section-heading projects-section-heading"
-        "project-1 project-2"
-        "project-3 project-4"
-        "project-5 project-6"
-        "project-7 project-8"
-        "project-9 project-9";
+        grid-template-areas:
+            "projects-section-heading projects-section-heading"
+            "project-1 project-2"
+            "project-3 project-4"
+            "project-5 project-6"
+            "project-7 project-8"
+            "project-9 project-9";
     }
 
     .project-1 {
@@ -971,4 +972,36 @@ nav div a {
         margin: auto;
     }
 
+}
+
+
+
+@media only screen and (min-width: 600px) {
+
+    #nav-right a:hover {
+        color: #53389E
+    }
+
+
+    #nav-right a:hover path {
+        stroke: #6941C6;
+        cursor: pointer;
+    }
+
+    .section-one a:nth-of-type(1):hover {
+        background-color: #6941C6;
+    }
+
+    .section-one a:nth-of-type(2):hover {
+        background-color: #FAFAFA;
+    }
+
+    .section-four-button:hover {
+        background-color: #6941C6;
+    }
+    
+
+    .footer-right svg:hover path {
+        fill: white;
+    }
 }
