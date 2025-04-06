@@ -373,6 +373,35 @@
         grid-area: 5/span 1;
     }
 
+    .section-six .section-six-heading {
+        margin-top: 130px;
+    }
+
+    .section-six-heading a {
+        font-size: 14px;
+    }
+
+    .section-six-heading p {
+        line-height: 30px;
+    }
+
+    .section-six-card {
+        margin-top: 25px;
+        padding:  25px;
+        height: inherit;
+    }
+
+    .section-six-card h3 {
+        margin-top: 50px;
+        letter-spacing: 0.7px;
+    }
+
+    .section-six-card p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+     }
+
+
 
 
     /* ********************* */
