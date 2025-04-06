@@ -106,7 +106,7 @@
     /* ****************** */
 
     .section-two {
-        grid-column: 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas:
             "section-two-heading"
             "section-two-card-1"
@@ -336,6 +336,40 @@
         width: inherit;
     }
 
+    .section-five h2 {
+       margin-top: 130px;
+       font-size: 32px
+    }
+
+    .section-five p {
+        margin-top: 18px;
+        font-size: 18.5px;
+        line-height: 25px;
+
+     }
+
+     .section-five div article {
+        padding-top: 10px;
+    }
+
+    .section-five div article h3 {
+        line-height: 25px;
+        display: inline;
+  
+    }
+
+    .section-five div article img {
+        display: inline-block;
+        position: relative;
+        bottom: 24px;
+    }
+
+
+    /* .section-five div article p {
+        
+     }
+      */
+
     /* ****************** */
     /* SECTION SIX SYLING */
     /* ****************** */
@@ -386,7 +420,7 @@
     }
 
     .section-six-card {
-        margin-top: 25px;
+        margin-top: 24px;
         padding:  25px;
         height: inherit;
     }
@@ -551,7 +585,7 @@
         grid-template-areas:
             "footer-right"
             "footer-left";
-    }
+     }
 
     div.footer-right {
         grid-area: 1/span 2;
