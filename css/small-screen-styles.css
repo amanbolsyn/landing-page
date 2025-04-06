@@ -67,6 +67,7 @@
 
 
     .section-one {
+        grid-area: section-one;
         height: 500px;
         width: inherit;
 
@@ -106,6 +107,7 @@
     /* ****************** */
 
     .section-two {
+        grid-area: section-two;
         grid-template-columns: 1fr;
         grid-template-areas:
             "section-two-heading"
@@ -194,6 +196,7 @@
     /* ******************** */
 
     .section-three {
+        grid-area: section-three;
         width: inherit;
         height: inherit;
     }
@@ -261,6 +264,7 @@
     /* SECTION FOUR SYLING */
     /* ******************* */
     .section-four {
+        grid-area: section-four;
         grid-template-columns: 1fr;
         column-gap: 0px;
         margin: auto;
@@ -329,7 +333,10 @@
     /* ******************* */
 
     .section-five {
+        grid-area: section-five;
         width: inherit;
+        height: inherit;
+        margin-bottom: 40px;
     }
 
     .section-five div {
@@ -341,29 +348,40 @@
        font-size: 32px
     }
 
-    .section-five p {
+    .section-five>p {
         margin-top: 18px;
+        margin-bottom: 34px;
         font-size: 18.5px;
         line-height: 25px;
 
      }
 
-     .section-five div article {
-        padding-top: 10px;
+    article.q-container {
+        display: grid; 
+        grid-template-areas: 
+        "question q-button"
+        "q-answer q-answer";
+        grid-template-columns: 11fr 1fr;
+        padding-bottom: 0px;
+        margin-bottom: 25px;
     }
 
-    .section-five div article h3 {
+    .question {
+        max-width:80vw;
+        grid-area: question;
         line-height: 25px;
-        display: inline;
-  
+        margin-bottom: 10px;
     }
 
-    .section-five div article img {
-        display: inline-block;
-        position: relative;
-        bottom: 24px;
+    .q-button {
+        grid-area: q-button;
     }
 
+    .q-answer {
+        grid-area: q-answer;
+        font-size:15.4px;
+        line-height: 24px;
+    }
 
     /* .section-five div article p {
         
@@ -375,6 +393,7 @@
     /* ****************** */
 
     .section-six {
+        grid-area: section-six;
         grid-template-columns: 1fr;
         grid-template-areas:
             "section-six-heading"

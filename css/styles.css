@@ -327,6 +327,7 @@ nav div a {
     cursor: pointer;
 }
 
+
 /* ********************* */
 /* SECTION FOUR STYLING */
 /* ******************** */
@@ -768,13 +769,12 @@ nav div a {
 @media only screen and (min-width: 600px) {
 
     #nav-right a:hover {
-        color: #53389E
+        color: #53389E;
+        cursor: pointer;
     }
-
 
     #nav-right a:hover path {
         stroke: #6941C6;
-        cursor: pointer;
     }
 
     .section-one a:nth-of-type(1):hover {
@@ -785,6 +785,11 @@ nav div a {
         background-color: #FAFAFA;
     }
 
+    .dot-inactive:hover {
+        background-color: white;
+    }
+
+    
     .section-four-button:hover {
         background-color: #6941C6;
     }
