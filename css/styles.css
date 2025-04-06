@@ -1,5 +1,6 @@
 html {
     margin: auto;
+    max-width: 1440px;
     font-family: 'Inter';
     /* helps to crate smooth srolling */
     scroll-behavior: smooth;

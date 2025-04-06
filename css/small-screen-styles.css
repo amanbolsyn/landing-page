@@ -21,8 +21,8 @@
     }
 
     #nav-left {
-        font-size: 20px;
-        margin-left: 12px;
+        font-size: 18px;
+        margin-left: 10px;
     }
 
     #nav-left img {
@@ -221,8 +221,8 @@
 
     .section-three div.section-three-left h2 {
         margin: 0 25px;
-        margin-top: 16px;
-        margin-bottom: 35px;
+        margin-top: 15px;
+        margin-bottom: 38px;
         font-size: 23.8px;
         line-height: 30px;
     }
@@ -233,8 +233,8 @@
 
     .section-three div.section-three-left p {
         margin: 0 25px;
-        margin-top: 16px;
-        margin-bottom:25px;
+        margin-top: 15px;
+        margin-bottom:28px;
     }
 
     .section-three div.section-three-left a.dot-active {
@@ -251,14 +251,11 @@
     
     .section-three div.section-three-right img {
         width: 92.5vw;
-        max-width: 480px;
         object-fit:cover;
         max-height: 280px;
         border-radius: 0  0 25px  25px ;
 
     }
-
-    /* ******************** */
 
     /* ******************* */
     /* SECTION FOUR SYLING */
@@ -274,6 +271,16 @@
         width: inherit;
     }
 
+    .section-four-heading a {
+        margin-top: 130px;
+        font-size: 12px;
+    }
+
+    .section-four-heading h2 {
+        font-size: 31.5px;
+        margin-top: 14px;
+        margin-bottom: 18px;
+    }
     .section-four-heading p {
         width: inherit;
     }
