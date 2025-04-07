@@ -37,6 +37,10 @@
         display: none;
     }
 
+    #nav-right label {
+        display: none;
+    }
+
     #burger-menu {
         display: block;
     }
