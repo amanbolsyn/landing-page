@@ -487,11 +487,6 @@
     /* ********************* */
     /* PROJECTS PAGE STYLING */
     /* ********************* */
-
-    .projects-page-container {
-        margin-bottom: 55px;
-    }
-
     .projects-section-heading {
         margin-top: 65px;
         margin-bottom: 14px;
@@ -535,6 +530,8 @@
         padding: 0px;
         column-gap: 0px;
         row-gap: 35px;
+        padding-bottom: 50px;
+        padding-bottom: 50px;
     }
 
     .project-1 {
