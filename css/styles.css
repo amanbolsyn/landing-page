@@ -1,3 +1,44 @@
+:root {
+  --text-color:black;
+  --text-color-heading: black;
+  --text-color-pharagraph: #535862;
+  --text-color-subheading: #6941C6;
+  --date-color-fourth-section: #181D27;
+  --question-color-fifth-section: #181D27;
+
+  --logo-text-color: black;
+
+  --background-color-one: white;
+  --background-color-two: #FAFAFA;
+
+  --bttn-background-color: #FFFFFF;
+  --bttn-text-color: #414651;
+  --bttn-border-color: #D5D7DA;
+  --bttn-hover-color: #FAFAFA;
+}
+
+:root:has(#theme-toggle:checked){
+
+    --text-color: #94979C;
+    --text-color-heading: white;
+    --text-color-pharagraph: #94979C;
+    --text-color-subheading:  #CECFD2;
+    --text-color-fourth-section: #94979C;
+    --question-color-fifth-section:#FFFFFF;
+
+    --logo-text-color:white;
+
+
+    --background-color-one: black;
+    --background-color-two: #13161B;
+
+    --bttn-background-color: #13161B;
+    --bttn-text-color: #FFFFFF;
+    --bttn-border-color: #373A41;
+    --bttn-hover-color: #373A41;
+}
+
+
 html {
     margin: auto;
     max-width: 1440px;
@@ -23,13 +64,13 @@ html {
 /* HEADER/NAVIGATION STYLING */
 /* ************************* */
 .header {
-    width: 84.5%;
-    background-color: white;
-    position: sticky;
     grid-area: header;
+    position: sticky;
     top: 0;
+    width: 84.5%;
     height: 80px;
     padding: 0 110px;
+    background-color: var(--background-color-one);
 }
 
 
@@ -47,6 +88,7 @@ html {
 #nav-left a {
     margin-left: 4.2px;
     letter-spacing: 0.6px;
+    color: var(--logo-text-color);
 }
 
 #nav-right {
@@ -64,14 +106,14 @@ html {
     display:none;
  }
 
- #dark-theme {
-    display:none
- }
-
-/* Hide the SVG when the checkbox is checked */
+ /* Hide the SVG when the checkbox is checked */
 label input[type="checkbox"]:checked ~ svg#light-theme {
     display: none;
 }
+
+ #dark-theme {
+    display:none
+ }
 
 label input[type="checkbox"]:checked ~ svg#dark-theme {
     display: inline;
@@ -85,7 +127,7 @@ label input[type="checkbox"]:checked ~ svg#dark-theme {
 /* links inside nav element  */
 nav div a {
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
     font-weight: 600;
     line-height: 24px;
     font-style: normal;
@@ -104,8 +146,6 @@ nav div a {
         "section-five"
         "section-six";
     margin: 0px;
-    padding: 0 110px;
-
 }
 
 /* ******************* */
@@ -114,6 +154,10 @@ nav div a {
 .section-one {
     grid-area: section-one;
     height: 800px;
+    background-color: var(--background-color-one);
+    padding: 0 110px;
+    
+
 }
 
 .section-one article {
@@ -129,7 +173,8 @@ nav div a {
     padding-top: 157px;
     padding-left: 2px;
     margin-bottom: 0px;
-    width: 750px
+    width: 750px;
+    color: var(--text-color-heading)
 }
 
 .section-one p {
@@ -139,7 +184,7 @@ nav div a {
     padding-top: 7px;
     padding-left: 2px;
     line-height: 27px;
-    color: #535862;
+    color: var(--text-color-pharagraph);
     width: 550px
 
 }
@@ -165,12 +210,12 @@ nav div a {
 
 
 .section-one a:nth-of-type(2) {
-    background-color: white;
-    border: 0.11rem rgba(213, 215, 218, 1) solid;
+    background-color: var(--bttn-background-color);
+    color: var(--bttn-text-color);
+    border: 0.11rem var(--bttn-border-color) solid;
     font-size: 18px;
     width: 7.7rem;
     margin-left: 0.4rem;
-    color: #414651;
     font-weight: 600;
 }
 
@@ -186,7 +231,10 @@ nav div a {
         "section-two-card-1 section-two-card-2 section-two-card-3"
         "section-two-card-4 section-two-card-5 section-two-card-6";
     gap: 0px 25px;
+    padding: 0 110px;
     padding-bottom: 31.5px;
+    background-color: var(--background-color-two);
+    
 }
 
 .section-two-card-1 {
@@ -220,7 +268,7 @@ nav div a {
 }
 
  .section-two-heading a {
-    color: #6941C6;
+    color: var(--text-color-subheading);
     font-weight: 600;
     display: block;
     text-align: center;
@@ -229,14 +277,14 @@ nav div a {
 .section-two-heading h2 {
     text-align: center;
     font-weight: 600;
-    color: #181D27;
+    color: var(--text-color-heading);
     font-size: 37px;
     margin-top: 12px;
     margin-bottom: 0px
 }
 
 .section-two-heading p {
-    color: #535862;
+    color: var(--text-color-pharagraph);
     font-weight: 400;
     text-align: center;
     font-size: 20px;
@@ -262,11 +310,13 @@ nav div a {
     font-size: 20px;
     letter-spacing: 0.1px;
     margin-top: 22px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    color: var(--text-color-heading);
 }
 
 .section-two-card p {
     text-align: center;
+    color: var(--text-color-pharagraph);
 }
 
 /* ********************** */
@@ -274,8 +324,10 @@ nav div a {
 /* ********************* */
 .section-three {
     grid-area: section-three;
-    /* background-color: azure; */
     height: 640px;
+    background-color: var(--background-color-one);
+    padding: 0 110px;
+
 }
 
 .section-three article {
@@ -348,13 +400,15 @@ nav div a {
 /* ******************** */
 .section-four {
     grid-area: section-four;
-    /* background-color: blue; */
     display: grid;
     grid-template-areas:
         "section-four-heading section-four-heading section-four-heading"
         "section-four-card-1 section-four-card-2 section-four-card-3"
         "section-four-button section-four-button section-four-button ";
     gap: 0 30px;
+    background-color: var(--background-color-two);
+    padding: 0 110px;
+
 }
 
 .section-four-card-1 {
@@ -378,13 +432,14 @@ nav div a {
     display: block;
     margin-top: 105px;
     font-weight: 600;
-    color: #6941C6;
+    color: var(--text-color-subheading);
 }
 
 .section-four-heading h2 {
     font-size: 36px;
     margin-top: 12px;
     margin-bottom: 25px;
+    color: var(--text-color-heading);
 }
 
 .section-four-heading p {
@@ -394,7 +449,7 @@ nav div a {
     display: block;
     width: 800px;
     margin: auto;
-    color: #535862;
+    color: var(--text-color-pharagraph);
     margin-bottom: 70px;
 }
 
@@ -405,7 +460,7 @@ nav div a {
 .project-card a {
     font-size: 14px;
     display: block;
-    color: #6941C6;
+    color: var(--text-color-subheading);
     font-weight: 600;
     margin-top: 18px;
     margin-bottom: 10px;
@@ -416,24 +471,31 @@ nav div a {
     font-size: 24px;
     letter-spacing: 0.2px;
     display: inline;
+    color: var(--text-color-heading);
 }
 
-.project-card h3+img {
+.project-card h3+svg {
     float: right;
     cursor: pointer;
 }
+
+.project-card h3+svg>path {
+    stroke: white;
+}
+
 
 .project-card p {
     font-size: 16px;
     letter-spacing: 0.1px;
     line-height: 23px;
     margin-top: 10px;
+    color: var(--text-color-pharagraph)
 }
 
 .project-card .project-duration {
     font-size: 14px;
     font-weight: 600;
-    color: #181D27;
+    color: var(--text-color-fourth-section);
     margin-top: 28px;
     margin-left: 2px;
     margin-bottom: 0px;
@@ -441,7 +503,7 @@ nav div a {
 
 .project-card .project-date {
     font-weight: 400;
-    color: #535862;
+    color:var(--text-color-pharagraph);
     margin-top: 5px;
     margin-left: 2px;
 }
@@ -472,9 +534,9 @@ nav div a {
 /* ******************** */
 .section-five {
     grid-area: section-five;
-    /* background-color: blueviolet; */
     height: 878px;
-
+    background-color: var(--background-color-one);
+    padding: 0 110px;
 }
 
 .section-five div {
@@ -482,19 +544,20 @@ nav div a {
     margin: auto;
 }
 
-.section-five>h2 {
+.section-five h2 {
     text-align: center;
     margin-top: 100px;
     margin-bottom: 0px;
     font-size: 37px;
     font-weight: 600;
+    color: var(--text-color-heading);
 }
 
 .section-five>p {
     text-align: center;
     font-size: 22px;
     font-weight: 400;
-    color: #535862;
+    color: var(--text-color-pharagraph);
     margin-bottom: 45px
 }
 
@@ -512,7 +575,7 @@ nav div a {
     display: inline-block;
     margin-top: 0px;
     font-weight: 500;
-    color: #181D27;
+    color: var(--question-color-fifth-section)
 }
 
 .section-five article img {
@@ -522,7 +585,7 @@ nav div a {
 .section-five article p {
     font-weight: 400;
     margin-top: 0px;
-    color: #535862;
+    color: var(--text-color-pharagraph);
     margin-right: 50px;
 }
 
@@ -533,15 +596,16 @@ nav div a {
 /* SECTION SIX STYLING */
 /* ******************* */
 .section-six {
-    margin-bottom: 71px;
     grid-area: section-six;
-    /* background-color: azure; */
     display: grid;
     grid-template-areas:
         "section-six-heading section-six-heading section-six-heading section-six-heading"
         "section-six-card-1 section-six-card-2 section-six-card-3 section-six-card-4 ";
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 0px 40px;
+    padding: 0px 110px;
+    padding-bottom: 75px;
+    background-color: var(--background-color-one);
 }
 
 .section-six-card-1 {
@@ -566,7 +630,7 @@ nav div a {
 }
 
 .section-six-heading a {
-    color: #6941C6;
+    color: var(--text-color-subheading);
     font-weight: 600;
 }
 
@@ -574,20 +638,23 @@ nav div a {
     font-size: 36px;
     margin-top: 12px;
     margin-bottom: 13px;
+    color: var(--text-color-heading);
 }
 
 .section-six-heading p {
     font-size: 20px;
     letter-spacing: 0.3px;
+    color: var(--text-color-pharagraph);
 }
 
 .section-six-card {
-    background-color: #FAFAFA;
-    margin-top: 54px;
+    background-color: var(--background-color-two);
+    margin-top: 50px;
     padding-top: 20px;
     padding-left: 16px;
     height: 290px;
     cursor: pointer;
+
 }
 
 .section-six-card img {
@@ -599,11 +666,12 @@ nav div a {
 .section-six-card h3 {
     margin-top: 64px;
     margin-bottom: 0px;
+    color: var(--text-color-heading);
 }
 
 .section-six-card p {
     font-weight: 400;
-    color: #535862;
+    color: var(--text-color-pharagraph);
     margin-top: 15px;
 }
 
@@ -612,7 +680,7 @@ nav div a {
     margin-top: 10px;
     font-weight: 600;
     text-decoration: none;
-    color: #6941C6;
+    color: var(--text-color-subheading);
 }
 
 /* ************* */
@@ -676,6 +744,7 @@ nav div a {
         "project-7 project-8 project-9";
     gap: 40px 30px;
     padding: 0 110px;
+    background-color: var(--background-color-one);
 }
 
 .project-1 {
@@ -717,7 +786,7 @@ nav div a {
 
 
 .projects-page-container {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
 }
 
 .projects-section-heading {
@@ -730,7 +799,7 @@ nav div a {
     display: block;
     text-align: center;
     font-weight: 600;
-    color: #6941C6
+    color: var(--text-color-subheading)
 }
 
 .projects-section-heading h1 {
@@ -738,12 +807,13 @@ nav div a {
     font-size: 37px;
     font-weight: 600;
     margin-top: 15px;
+    color: var(--text-color-heading)
 }
 
 .projects-section-heading p {
     text-align: center;
     font-weight: 400;
-    color: #535862;
+    color: var(--text-color-pharagraph);
     font-size: 21px;
 }
 
@@ -794,6 +864,7 @@ nav div a {
 
     #nav-right label:hover svg#dark-theme>path {
         fill: #6941C6;
+        stroke: #6941C6;
     }
 
     .section-one a:nth-of-type(1):hover {
@@ -801,7 +872,7 @@ nav div a {
     }
 
     .section-one a:nth-of-type(2):hover {
-        background-color: #FAFAFA;
+        background-color: var(--bttn-hover-color);
     }
 
     .dot-inactive:hover {

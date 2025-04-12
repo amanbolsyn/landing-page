@@ -33,9 +33,9 @@
                 <a href="projects.html">Projects</a>
                 <a href="main.html#frequently-asked-questions">FAQ</a>
                 <a href="main.html#contacts">Contacts</a>
-
-                <a id="light-theme">
-                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <label>
+                    <input type = "checkbox" id = "theme-toggle">
+                    <svg id="light-theme" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13 1V3.76923" stroke="#535862" stroke-width="2" stroke-miterlimit="10"
                             stroke-linecap="round" />
                         <path d="M13 22.2307V24.9999" stroke="#535862" stroke-width="2" stroke-miterlimit="10"
@@ -55,8 +55,11 @@
                         <path
                             d="M13 17.6153C15.549 17.6153 17.6154 15.5489 17.6154 12.9999C17.6154 10.4509 15.549 8.38452 13 8.38452C10.451 8.38452 8.38464 10.4509 8.38464 12.9999C8.38464 15.5489 10.451 17.6153 13 17.6153Z"
                             stroke="#535862" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" />
-                    </svg>     
-                </a>
+                    </svg>
+                    <svg id = "dark-theme" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.46154 6.07692C7.46154 4.31038 7.72173 2.5225 8.38462 1C3.97519 2.91942 1 7.42231 1 12.5385C1 19.4206 6.57942 25 13.4615 25C18.5777 25 23.0806 22.0248 25 17.6154C23.4775 18.2783 21.6896 18.5385 19.9231 18.5385C13.041 18.5385 7.46154 12.959 7.46154 6.07692Z" fill="#94979C" stroke="#94979C" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </label>
                 <a id = "burger-menu">
                     <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 7H19M1 1H19M1 13H19" stroke="#414651" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -83,7 +86,9 @@
             <img src="assets/projects-page-images/project-img-1.svg" alt="project image one">
             <a>Website</a>
             <h3>Urban Ride Hub</h3>
-            <img src="assets/projects-page-images/arrow-right-up.svg" alt="arrow right up">
+            <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 21L17 11M17 11H7M17 11V21" stroke="#181D27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
             <p>Created a bike rental site with real-time availability, routes, and membership management.</p>
             <a class="project-duration">3 weeks | Angular | Google Maps API</a>
             <a class="project-date">20 Apr 2022</a>
@@ -92,7 +97,9 @@
             <img src="assets/projects-page-images/project-img-2.svg" alt="project image two">
             <a>Website</a>
             <h3>Fitness Community</h3>
-            <img src="assets/projects-page-images/arrow-right-up.svg" alt="arrow right up">
+            <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 21L17 11M17 11H7M17 11V21" stroke="#181D27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
             <p>Built a vibrant site for fitness enthusiasts with blog integration and workout plans.</p>
             <a class="project-duration">5 weeks | Django | Member Login</a>
             <a class="project-date">30 May 2024</a>
@@ -101,7 +108,9 @@
             <img src="assets/projects-page-images/project-img-3.svg" alt="project image 3">
             <a>Website</a>
             <h3>E-commerce Revolution</h3>
-            <img src="assets/projects-page-images/arrow-right-up.svg" alt="arrow right up">
+            <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 21L17 11M17 11H7M17 11V21" stroke="#181D27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
             <p>E-commerce Revolution: Built a dynamic store with seamless payments and recommendations.</p>
             <a class="project-duration">6 weeks | Next.js | Stripe API</a>
             <a class="project-date">18 Jan 2024</a>
@@ -110,7 +119,9 @@
             <img src="assets/projects-page-images/project-img-4.svg" alt="project image 4">
             <a>Application</a>
             <h3>EventPlanner Pro</h3>
-            <img src="assets/projects-page-images/arrow-right-up.svg" alt="arrow right up">
+            <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 21L17 11M17 11H7M17 11V21" stroke="#181D27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
             <p>Built an event app with RSVP tracking, calendar integration, and guest list management.</p>
             <a class="project-duration">5 months | Flutter | Google Calendar API</a>
             <a class="project-date">17 Jan 2023</a>
@@ -119,7 +130,9 @@
             <img src="assets/projects-page-images/project-img-5.svg" alt="project image 5">
             <a>Website</a>
             <h3>Corporate Branding</h3>
-            <img src="assets/projects-page-images/arrow-right-up.svg" alt="arrow right up">
+            <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 21L17 11M17 11H7M17 11V21" stroke="#181D27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
             <p>Built a professional corporate site with customized branding and real-time updates.</p>
             <a class="project-duration">5 weeks | WordPress | Multilingual Support</a>
             <a class="project-date">16 Aug 2022</a>
@@ -128,7 +141,9 @@
             <img src="assets/projects-page-images/project-img-6.svg" alt="project image 6">
             <a>Application</a>
             <h3>EduLearn</h3>
-            <img src="assets/projects-page-images/arrow-right-up.svg" alt="arrow right up">
+            <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 21L17 11M17 11H7M17 11V21" stroke="#181D27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
             <p>Designed an e-learning platform featuring video lessons, quizzes, and progress tracking.</p>
             <a class="project-duration">8 months | React Native | AWS</a>
             <a class="project-date">15 Jan 2025</a>
@@ -137,7 +152,9 @@
             <img src="assets/projects-page-images/project-img-7.svg" alt="project image 7">
             <a>Application</a>
             <h3>Tech Startup Site</h3>
-            <img src="assets/projects-page-images/arrow-right-up.svg" alt="arrow right up">
+            <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 21L17 11M17 11H7M17 11V21" stroke="#181D27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
             <p>Designed a modern and fast-loading website to highlight a new tech startup’s services.</p>
             <a class="project-duration">4 weeks | Next.js | SEO Optimization</a>
             <a class="project-date">14 Jan 2025</a>
@@ -146,7 +163,9 @@
             <img src="assets/projects-page-images/project-img-8.svg" alt="project image 8">
             <a>Website</a>
             <h3>Portfolio Perfection</h3>
-            <img src="assets/projects-page-images/arrow-right-up.svg" alt="arrow right up">
+            <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 21L17 11M17 11H7M17 11V21" stroke="#181D27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
             <p>Designed a stylish, modern portfolio to highlight creative work with elegance and efficiency.</p>
             <a class="project-duration">2 months | Next.js | Tailwind CSS | GSAP</a>
             <a class="project-date">10 Jan 2023</a>
@@ -155,7 +174,9 @@
             <img src="assets/projects-page-images/project-img-9.svg" alt="project image 9">
             <a>Website</a>
             <h3>Non-Profit Impact</h3>
-            <img src="assets/projects-page-images/arrow-right-up.svg" alt="arrow right up">
+            <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 21L17 11M17 11H7M17 11V21" stroke="#181D27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
             <p>Launched a fundraising website with integrated donation tracking and volunteer coordination.</p>
             <a class="project-duration">7 weeks | PHP | Donation Gateway</a>
             <a class="project-date">12 Jule 2024</a>

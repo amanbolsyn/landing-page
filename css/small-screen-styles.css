@@ -4,14 +4,14 @@
 @media only screen and (min-width: 375px) and (max-width: 599px) {
 
     .body-conatiner {
-        width: 100%;
+        width: 100vw;
     }
 
     /* ************** */
     /* HEADER STYLING */
     /* ************** */
     .header {
-        width: 100%;
+        width: 100vw;
         padding: 0px;
         height: 72px;
     }
@@ -50,9 +50,7 @@
     /* ***************** */
 
     .main-page-container {
-        width: 92.5vw;
-        padding: 0px;
-        padding-top: 28px;
+        width: 100vw;
         margin: auto;
         grid-template-areas:
             /* body grid layout scheme */
@@ -73,13 +71,16 @@
     .section-one {
         grid-area: section-one;
         height: 500px;
+        padding:0px;
+        padding-top: 28px;
         width: inherit;
-
     }
 
     .section-one article {
         background-image: none;
         height: inherit;
+        padding-left: 3.5vw;
+        padding-right: 3.5vw;
     }
 
     .section-one article h1 {
@@ -123,18 +124,20 @@
             "section-two-card-6";
         column-gap: 0px;
         width: inherit;
-        padding-bottom: 0px;
+        padding:0px;
     }
 
     .section-two-card {
-        width: inherit;
-        padding-bottom: 22px;
+        padding-bottom: 27px;
+        padding-left: 3.5vw;
+        padding-right: 3.5vw;
     }
 
     .section-two-heading {
-        width: inherit;
         grid-area: 1/span 1;
         padding-bottom: 44px;
+        padding-left: 3.5vw;
+        padding-right: 3.5vw;
     }
 
     .section-two-heading a {
@@ -152,7 +155,7 @@
         margin-top: 15px;
         font-size: 18.5px;
         line-height: 29px;
-    }
+     }
 
     .section-two-card img {
         padding: 10px;
@@ -201,8 +204,11 @@
 
     .section-three {
         grid-area: section-three;
-        width: inherit;
+        width: 92.5vw;
         height: inherit;
+        padding:0px;        
+        padding-left: 3.75vw;
+        padding-right: 3.75vw;
     }
 
     .section-three article {
@@ -273,6 +279,7 @@
         column-gap: 0px;
         margin: auto;
         width: inherit;
+        padding:0px;
     }
 
     .section-four-heading {
@@ -296,7 +303,8 @@
     }
 
     .section-four div {
-        width: inherit;
+        padding-left: 3.75vw;
+        padding-right: 3.75vw;
     }
 
     .section-four-heading a {
@@ -317,7 +325,7 @@
     }
 
     .project-card img:first-of-type {
-    width: inherit;
+        width: inherit;
      }
 
     .section-four .project-card {
@@ -325,10 +333,10 @@
     }
 
     .section-four .section-four-button {
-        width: inherit;
+        width: 92.5vw;
         text-align: center;
         padding: 0.9rem 0rem;
-        margin: 0px;
+        margin: auto;
         border-radius: 0.5rem;
      }
 
@@ -340,19 +348,28 @@
         grid-area: section-five;
         width: inherit;
         height: inherit;
-        margin-bottom: 40px;
+        padding:0px;
+        padding-bottom: 40px;
+
+
     }
 
     .section-five div {
-        width: inherit;
+        width: auto;
+        padding-left: 3.75vw;
+        padding-right: 3.75vw;
     }
 
     .section-five h2 {
+       padding-left: 3.75vw;
+       padding-right: 3.75vw;
        margin-top: 130px;
        font-size: 32px
     }
 
     .section-five>p {
+        padding-left: 3.75vw;
+        padding-right: 3.75vw;
         margin-top: 18px;
         margin-bottom: 34px;
         font-size: 18.5px;
@@ -408,6 +425,8 @@
         column-gap: 0px;
         margin: auto;
         width: inherit;
+        padding:0px;
+
     }
 
     .section-six-card {
@@ -432,6 +451,8 @@
 
     .section-six .section-six-heading {
         margin-top: 130px;
+        padding-left: 3.75vw;
+        padding-right: 3.75vw;
     }
 
     .section-six-heading a {
@@ -446,6 +467,8 @@
         margin-top: 24px;
         padding:  25px;
         height: inherit;
+        margin-left: 3.75vw;
+        margin-right: 3.75vw;
     }
 
     .section-six-card h3 {
