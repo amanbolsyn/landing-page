@@ -148,16 +148,20 @@ nav div a {
     margin: 0px;
 }
 
+.container-one {
+    width: 100vw;
+    background-color: var( --background-color-one);
+}
+
 /* ******************* */
 /* SECTION ONE STYLING */
 /* ******************* */
 .section-one {
     grid-area: section-one;
     height: 800px;
-    background-color: var(--background-color-one);
-    padding: 0 110px;
-    
-
+    width: 100%;
+    max-width: 1220px;
+    padding:0 110px;
 }
 
 .section-one article {
@@ -480,7 +484,7 @@ nav div a {
 }
 
 .project-card h3+svg>path {
-    stroke: white;
+    stroke:var(--logo-text-color);
 }
 
 
