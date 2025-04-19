@@ -145,32 +145,49 @@ nav div a {
     display: grid;
     grid-template-areas:
         /* body grid layout scheme */
-        "section-one"
-        "section-two"
-        "section-three"
-        "section-four"
-        "section-five"
-        "section-six";
+        "section-container-one"
+        "section-container-two"
+        "section-container-three"
+        "section-container-four"
+        "section-container-five"
+        "section-container-six";
     margin: 0px;
 }
 
-.section-container-one{
+.section-container-one, .section-container-three, .section-container-five, .section-container-six{
     width: 100vw;
     background-color: var( --background-color-one);
 }
 
-.section-container-two{
+.section-container-two, .section-container-four{
     width: 100vw;
-
     background-color: var( --background-color-two);
+}
+
+.section-container-one {
+    grid-area: section-container-one;
+}
+.section-container-two {
+    grid-area: section-container-two;
+}
+.section-container-three {
+    grid-area: section-container-three;
+}
+.section-container-four {
+    grid-area: section-container-four;
+}
+.section-container-five {
+    grid-area: section-container-five;
+}
+.section-container-six {
+    grid-area: section-container-six;
 }
 
 /* ******************* */
 /* SECTION ONE STYLING */
 /* ******************* */
 .section-one {
-    grid-area: section-one;
-    width: inherit;
+     width: inherit;
     max-width: 1440px;
     box-sizing: border-box;
     padding:0 110px;
@@ -242,7 +259,6 @@ nav div a {
 /* SECTION TWO STYLING */
 /* ******************* */
 .section-two {
-    grid-area: section-two;
     display: grid;
     grid-template-areas:
         "section-two-heading section-two-heading section-two-heading"
@@ -343,8 +359,7 @@ nav div a {
 /* SECTION TRHEE STYLING */
 /* ********************* */
 .section-three {
-    grid-area: section-three;
-    width:inherit;
+     width:inherit;
     max-width: 1440px;
     box-sizing: border-box;
     padding: 0 110px;
@@ -420,8 +435,7 @@ nav div a {
 /* SECTION FOUR STYLING */
 /* ******************** */
 .section-four {
-    grid-area: section-four;
-    display: grid;
+     display: grid;
     grid-template-areas:
         "section-four-heading section-four-heading section-four-heading"
         "section-four-card-1 section-four-card-2 section-four-card-3"
@@ -558,8 +572,7 @@ nav div a {
 /* SECTION FIVE STYLING */
 /* ******************** */
 .section-five {
-    grid-area: section-five;
-    width: inherit;
+     width: inherit;
     max-width: 1440px;
     box-sizing: border-box;
     padding: 0 110px;
@@ -646,8 +659,7 @@ article.q-container {
 /* SECTION SIX STYLING */
 /* ******************* */
 .section-six {
-    grid-area: section-six;
-    display: grid;
+     display: grid;
     grid-template-areas:
         "section-six-heading section-six-heading section-six-heading section-six-heading"
         "section-six-card-1 section-six-card-2 section-six-card-3 section-six-card-4 ";

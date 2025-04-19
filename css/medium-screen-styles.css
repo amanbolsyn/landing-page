@@ -16,14 +16,9 @@
         min-width:1018px;
     }
 
-    .section-container-one {
+    .section-container-one, .section-container-two, .section-container-three, .section-container-four, .section-container-five, .section-container-six {
         min-width:1018px;
     }
-
-    .section-container-two {
-        min-width:1018px;
-    }
- 
   
     /* ****************** */
     /* SECTION ONE SYLING */

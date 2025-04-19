@@ -54,13 +54,12 @@
         margin: auto;
         grid-template-areas:
             /* body grid layout scheme */
-            "section-one"
-            "section-two"
-            "section-three"
-            "section-four"
-            "section-six"
-            "section-five";
-
+            "section-container-one"
+            "section-container-two"
+            "section-container-three"
+            "section-container-four"
+            "section-container-six"
+            "section-container-five";
     }
 
     /* ****************** */
@@ -69,10 +68,9 @@
 
 
     .section-one {
-        grid-area: section-one;
-        height: 500px;
+         height: 500px;
         padding:0px;
-        padding-top: 28px;
+        padding-top: 21px;
         width: inherit;
     }
 
@@ -112,8 +110,7 @@
     /* ****************** */
 
     .section-two {
-        grid-area: section-two;
-        grid-template-columns: 1fr;
+         grid-template-columns: 1fr;
         grid-template-areas:
             "section-two-heading"
             "section-two-card-1"
@@ -143,7 +140,7 @@
     .section-two-heading a {
         font-size: 14px;
         margin: auto;
-        margin-top: 35px;
+        margin-top: 55px;
     }
 
     .section-two-heading h2 {
@@ -207,13 +204,11 @@
         width: 92.5vw;
         height: inherit;
         padding:0px;        
-        padding-left: 3.75vw;
-        padding-right: 3.75vw;
     }
 
     .section-three article {
         width: inherit;
-        margin-top: 94px;
+        margin-top: 88px;
         border-radius: 18px;
     }
 
@@ -274,8 +269,7 @@
     /* SECTION FOUR SYLING */
     /* ******************* */
     .section-four {
-        grid-area: section-four;
-        grid-template-columns: 1fr;
+         grid-template-columns: 1fr;
         column-gap: 0px;
         margin: auto;
         width: inherit;
@@ -345,8 +339,7 @@
     /* ******************* */
 
     .section-five {
-        grid-area: section-five;
-        width: inherit;
+         width: inherit;
         height: inherit;
         padding:0px;
         padding-bottom: 40px;
@@ -371,7 +364,7 @@
         padding-left: 3.75vw;
         padding-right: 3.75vw;
         margin-top: 18px;
-        margin-bottom: 34px;
+        margin-bottom: 10px;
         font-size: 18.5px;
         line-height: 25px;
 
@@ -381,14 +374,12 @@
         display: grid; 
         grid-template-areas: 
         "question q-button"
-        "q-answer q-answer";
+        "q-answer q-button";
         grid-template-columns: 11fr 1fr;
-        padding-bottom: 0px;
-        margin-bottom: 25px;
+        row-gap: 0px;
     }
 
     .question {
-        max-width:80vw;
         grid-area: question;
         line-height: 25px;
         margin-bottom: 10px;
@@ -404,18 +395,12 @@
         line-height: 24px;
     }
 
-    /* .section-five div article p {
-        
-     }
-      */
-
     /* ****************** */
     /* SECTION SIX SYLING */
     /* ****************** */
 
     .section-six {
-        grid-area: section-six;
-        grid-template-columns: 1fr;
+         grid-template-columns: 1fr;
         grid-template-areas:
             "section-six-heading"
             "section-six-card-1"
@@ -488,8 +473,8 @@
     /* PROJECTS PAGE STYLING */
     /* ********************* */
     .projects-section-heading {
-        margin-top: 65px;
-        margin-bottom: 14px;
+        margin-top: 58px;
+        margin-bottom: 17px;
     }
 
     .projects-section-heading a {
