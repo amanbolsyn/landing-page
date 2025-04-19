@@ -170,11 +170,11 @@ nav div a {
 /* ******************* */
 .section-one {
     grid-area: section-one;
-    height: 800px;
     width: inherit;
     max-width: 1440px;
     box-sizing: border-box;
     padding:0 110px;
+    padding-bottom: 100px;
     margin: auto;
 }
 
@@ -254,7 +254,7 @@ nav div a {
     margin:auto;
     box-sizing: border-box;
     padding: 0 110px;
-    /* padding-bottom: 31.5px;    */
+    padding-bottom: 30px;   
 }
 
 .section-two-card-1 {
@@ -344,7 +344,6 @@ nav div a {
 /* ********************* */
 .section-three {
     grid-area: section-three;
-    height: 640px;
     width:inherit;
     max-width: 1440px;
     box-sizing: border-box;
@@ -456,7 +455,7 @@ nav div a {
 .section-four-heading a {
     width: inherit;
     display:block;
-    margin-top: 105px;
+    margin-top: 95px;
     font-weight: 600;
     color: var(--text-color-subheading);
 }
@@ -560,11 +559,11 @@ nav div a {
 /* ******************** */
 .section-five {
     grid-area: section-five;
-    height: 878px;
     width: inherit;
     max-width: 1440px;
     box-sizing: border-box;
     padding: 0 110px;
+    padding-bottom: 60px;
     margin: auto;
 }
 
@@ -616,30 +615,29 @@ article.q-container {
     "question q-button"
     "q-answer q-button";
     grid-template-columns: 11fr 1fr;
+    row-gap:10px;
     padding-bottom: 0px;
     margin-bottom: 25px;
 }
 
 .question {
+    margin-bottom: 0px;
     grid-area: question;
     line-height: 25px;
-    margin-bottom: 10px;
     margin-top: 0px;
 }
 
+
 .q-button {
     grid-area: q-button;
+    margin-left: 40px;
 }
-
-img.q-button {
-   margin-left: 40px;
-}
-
 
 .q-answer {
     grid-area: q-answer;
     font-size:15.4px;
     line-height: 24px;
+    margin-top: 0px;
 }
 
 
@@ -659,7 +657,7 @@ img.q-button {
     max-width: 1440px;
     box-sizing: border-box;
     padding: 0px 110px;
-    /* padding-bottom: 75px; */
+    padding-bottom: 75px;
     margin:auto;
  }
 
@@ -802,7 +800,6 @@ img.q-button {
 
     
 }
-
 
 .projects-page-container {
     grid-area: projects-page-container;
