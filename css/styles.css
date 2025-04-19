@@ -601,23 +601,46 @@ nav div a {
 }
 
 .section-five article h3 {
-    display: inline-block;
-    margin-top: 0px;
-    font-weight: 500;
     color: var(--question-color-fifth-section)
 }
 
-.section-five article img {
-    float: right;
-}
-
 .section-five article p {
-    font-weight: 400;
-    margin-top: 0px;
     color: var(--text-color-pharagraph);
-    margin-right: 50px;
 }
 
+
+article.q-container {
+    width:inherit;
+    display: grid; 
+    grid-template-areas: 
+    "question q-button"
+    "q-answer q-button";
+    grid-template-columns: 11fr 1fr;
+    padding-bottom: 0px;
+    margin-bottom: 25px;
+}
+
+.question {
+    grid-area: question;
+    line-height: 25px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.q-button {
+    grid-area: q-button;
+}
+
+img.q-button {
+   margin-left: 40px;
+}
+
+
+.q-answer {
+    grid-area: q-answer;
+    font-size:15.4px;
+    line-height: 24px;
+}
 
 
 
