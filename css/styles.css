@@ -766,6 +766,14 @@ nav div a {
         "projects-page-container"
         "footer";
     margin: 0px;
+    
+}
+
+.projects-main-container {
+    width:100vw;
+    background-color: var(--background-color-one);
+
+    
 }
 
 
@@ -779,7 +787,9 @@ nav div a {
         "project-7 project-8 project-9";
     gap: 40px 30px;
     padding: 0 110px;
-    background-color: var(--background-color-one);
+    width: inherit;
+    max-width: 1220px;
+    margin:auto;
 }
 
 .project-1 {
@@ -882,8 +892,6 @@ nav div a {
     }
 
 }
-
-
 
 
 @media only screen and (min-width: 600px) {
