@@ -73,7 +73,8 @@ html {
 .header {
     grid-area: header;
     width: inherit;
-    max-width:1220px;
+    max-width:1440px;
+    box-sizing: border-box;
     margin:auto;
     padding: 0 110px;
  }
@@ -170,7 +171,8 @@ nav div a {
     grid-area: section-one;
     height: 800px;
     width: inherit;
-    max-width: 1220px;
+    max-width: 1440px;
+    box-sizing: border-box;
     padding:0 110px;
     margin: auto;
 }
@@ -247,10 +249,11 @@ nav div a {
         "section-two-card-4 section-two-card-5 section-two-card-6";
     gap: 0px 25px;
     width:inherit;
-    max-width: 1220px;
+    max-width: 1440px;
     margin:auto;
+    box-sizing: border-box;
     padding: 0 110px;
-    padding-bottom: 31.5px;   
+    /* padding-bottom: 31.5px;    */
 }
 
 .section-two-card-1 {
@@ -341,12 +344,11 @@ nav div a {
 .section-three {
     grid-area: section-three;
     height: 640px;
-    background-color: var(--background-color-one);
-    padding: 0 110px;
     width:inherit;
-    max-width: 1220px;
+    max-width: 1440px;
+    box-sizing: border-box;
+    padding: 0 110px;
     margin: auto;
-
 }
 
 .section-three article {
@@ -425,10 +427,10 @@ nav div a {
         "section-four-card-1 section-four-card-2 section-four-card-3"
         "section-four-button section-four-button section-four-button ";
     gap: 0 30px;
-    background-color: var(--background-color-two);
-    padding: 0 110px;
     width: inherit;
-    max-width: 1220px;
+    max-width: 1440px;
+    box-sizing: border-box;
+    padding: 0 110px;
     margin: auto;
 
 }
@@ -546,7 +548,6 @@ nav div a {
     border-radius: 0.4rem;
     margin-bottom: 92px;
     cursor: pointer;
-
 }
 
 
@@ -557,10 +558,10 @@ nav div a {
 .section-five {
     grid-area: section-five;
     height: 878px;
-    background-color: var(--background-color-one);
-    padding: 0 110px;
     width: inherit;
-    max-width: 1220px;
+    max-width: 1440px;
+    box-sizing: border-box;
+    padding: 0 110px;
     margin: auto;
 }
 
@@ -628,13 +629,13 @@ nav div a {
         "section-six-card-1 section-six-card-2 section-six-card-3 section-six-card-4 ";
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 0px 40px;
-    padding: 0px 110px;
-    padding-bottom: 75px;
     width: inherit;
-    max-width: 1220px;
+    max-width: 1440px;
+    box-sizing: border-box;
+    padding: 0px 110px;
+    /* padding-bottom: 75px; */
     margin:auto;
-    background-color: var(--background-color-one);
-}
+ }
 
 .section-six-card-1 {
     grid-area: section-six-card-1;
