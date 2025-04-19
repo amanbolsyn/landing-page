@@ -273,6 +273,7 @@
         column-gap: 0px;
         margin: auto;
         width: inherit;
+        margin-bottom:65px;
         padding:0px;
     }
 
@@ -435,7 +436,7 @@
     }
 
     .section-six .section-six-heading {
-        margin-top: 130px;
+        margin-top: 65px;
         padding-left: 3.75vw;
         padding-right: 3.75vw;
     }
