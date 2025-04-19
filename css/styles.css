@@ -41,7 +41,6 @@
 
 html {
     margin: auto;
-    max-width: 1440px;
     font-family: 'Inter';
     /* helps to crate smooth srolling */
     scroll-behavior: smooth;
@@ -63,15 +62,21 @@ html {
 /* ************************* */
 /* HEADER/NAVIGATION STYLING */
 /* ************************* */
-.header {
-    grid-area: header;
+
+.header-container {
+    width: 100vw;
+    background-color: var(--background-color-one);
     position: sticky;
     top: 0;
-    width: 84.5%;
     height: 80px;
-    padding: 0 110px;
-    background-color: var(--background-color-one);
 }
+.header {
+    grid-area: header;
+    width: inherit;
+    max-width:1220px;
+    margin:auto;
+    padding: 0 110px;
+ }
 
 
 .header div {
@@ -148,9 +153,14 @@ nav div a {
     margin: 0px;
 }
 
-.container-one {
+.section-container-one{
     width: 100vw;
     background-color: var( --background-color-one);
+}
+
+.section-container-two{
+    width: 100vw;
+    background-color: var( --background-color-two);
 }
 
 /* ******************* */
@@ -159,9 +169,10 @@ nav div a {
 .section-one {
     grid-area: section-one;
     height: 800px;
-    width: 100%;
+    width: inherit;
     max-width: 1220px;
     padding:0 110px;
+    margin: auto;
 }
 
 .section-one article {
@@ -235,10 +246,11 @@ nav div a {
         "section-two-card-1 section-two-card-2 section-two-card-3"
         "section-two-card-4 section-two-card-5 section-two-card-6";
     gap: 0px 25px;
+    width:inherit;
+    max-width: 1220px;
+    margin:auto;
     padding: 0 110px;
-    padding-bottom: 31.5px;
-    background-color: var(--background-color-two);
-    
+    padding-bottom: 31.5px;   
 }
 
 .section-two-card-1 {
@@ -331,6 +343,9 @@ nav div a {
     height: 640px;
     background-color: var(--background-color-one);
     padding: 0 110px;
+    width:inherit;
+    max-width: 1220px;
+    margin: auto;
 
 }
 
@@ -412,6 +427,9 @@ nav div a {
     gap: 0 30px;
     background-color: var(--background-color-two);
     padding: 0 110px;
+    width: inherit;
+    max-width: 1220px;
+    margin: auto;
 
 }
 
@@ -541,6 +559,9 @@ nav div a {
     height: 878px;
     background-color: var(--background-color-one);
     padding: 0 110px;
+    width: inherit;
+    max-width: 1220px;
+    margin: auto;
 }
 
 .section-five div {
@@ -609,6 +630,9 @@ nav div a {
     gap: 0px 40px;
     padding: 0px 110px;
     padding-bottom: 75px;
+    width: inherit;
+    max-width: 1220px;
+    margin:auto;
     background-color: var(--background-color-one);
 }
 
@@ -690,12 +714,19 @@ nav div a {
 /* ************* */
 /* FOOTER STYLES */
 /* ************* */
+
+.footer-container {
+    width: 100vw;
+    background-color: #53389E;
+}
+
 .footer {
     grid-area: footer;
-    background-color: #53389E;
-    /* height: 168px; */
     color: white;
     padding: 0px 110px;
+    width: inherit;
+    max-width: 1220px;
+    margin: auto;
     padding-top: 65px;
     display: grid;
     grid-template-areas:
