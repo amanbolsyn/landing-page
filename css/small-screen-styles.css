@@ -2,7 +2,6 @@
 /* Small devices (small and large phones, 375px and up to 599px) */
 /* ************************************************************* */
 @media only screen and (min-width: 375px) and (max-width: 599px) {
-
     .body-conatiner {
         width: 100vw;
     }
@@ -10,6 +9,7 @@
     /* ************** */
     /* HEADER STYLING */
     /* ************** */
+
     .header {
         width: 100vw;
         padding: 0px;
@@ -66,10 +66,9 @@
     /* SECTION ONE SYLING */
     /* ****************** */
 
-
     .section-one {
-         height: 500px;
-        padding:0px;
+        height: 500px;
+        padding: 0px;
         padding-top: 21px;
         width: inherit;
     }
@@ -110,7 +109,7 @@
     /* ****************** */
 
     .section-two {
-         grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas:
             "section-two-heading"
             "section-two-card-1"
@@ -121,7 +120,7 @@
             "section-two-card-6";
         column-gap: 0px;
         width: inherit;
-        padding:0px;
+        padding: 0px;
     }
 
     .section-two-card {
@@ -131,7 +130,7 @@
     }
 
     .section-two-heading {
-        grid-area: 1/span 1;
+        grid-area: 1 / span 1;
         padding-bottom: 44px;
         padding-left: 3.5vw;
         padding-right: 3.5vw;
@@ -152,7 +151,7 @@
         margin-top: 15px;
         font-size: 18.5px;
         line-height: 29px;
-     }
+    }
 
     .section-two-card img {
         padding: 10px;
@@ -162,7 +161,6 @@
         margin-top: 20px;
         margin-bottom: 0px;
         font-size: 18px;
-
     }
 
     .section-two-card p {
@@ -170,29 +168,28 @@
         line-height: 23px;
     }
 
-
     .section-two-card-1 {
-        grid-area: 2/span 1;
+        grid-area: 2 / span 1;
     }
 
     .section-two-card-2 {
-        grid-area: 3/span 1;
+        grid-area: 3 / span 1;
     }
 
     .section-two-card-3 {
-        grid-area: 4/span 1;
+        grid-area: 4 / span 1;
     }
 
     .section-two-card-4 {
-        grid-area: 5/span 1;
+        grid-area: 5 / span 1;
     }
 
     .section-two-card-5 {
-        grid-area: 6/span 1;
+        grid-area: 6 / span 1;
     }
 
     .section-two-card-6 {
-        grid-area: 7/span 1;
+        grid-area: 7 / span 1;
     }
 
     /* ******************** */
@@ -203,7 +200,7 @@
         grid-area: section-three;
         width: 92.5vw;
         height: inherit;
-        padding:0px;        
+        padding: 0px;
     }
 
     .section-three article {
@@ -221,7 +218,6 @@
     .section-three div.section-three-left img {
         margin-top: 40px;
     }
-
 
     .section-three div.section-three-left img:first-of-type {
         margin-left: 25px;
@@ -242,59 +238,58 @@
     .section-three div.section-three-left p {
         margin: 0 25px;
         margin-top: 15px;
-        margin-bottom:28px;
+        margin-bottom: 28px;
     }
 
     .section-three div.section-three-left a.dot-active {
         margin-left: 25px;
         margin-right: 0px;
-        margin-bottom:40px;
+        margin-bottom: 40px;
     }
 
-    .section-three div.section-three-left a.dot-inactive { 
-       margin-left:10px;
-       margin-right:0px;
-       margin-bottom:40px;
+    .section-three div.section-three-left a.dot-inactive {
+        margin-left: 10px;
+        margin-right: 0px;
+        margin-bottom: 40px;
     }
-    
+
     .section-three div.section-three-right img {
         width: 92.5vw;
-        object-fit:cover;
+        object-fit: cover;
         max-height: 280px;
-        border-radius: 0  0 25px  25px ;
-
+        border-radius: 0 0 25px 25px;
     }
 
     /* ******************* */
     /* SECTION FOUR SYLING */
     /* ******************* */
     .section-four {
-         grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
         column-gap: 0px;
         margin: auto;
         width: inherit;
-        margin-bottom:65px;
-        padding:0px;
+        margin-bottom: 65px;
+        padding: 0px;
     }
 
     .section-four-heading {
-        grid-area: 1/span 1;
+        grid-area: 1 / span 1;
     }
 
     .section-four-card-1 {
-        grid-area: 2/span 1;
+        grid-area: 2 / span 1;
     }
 
     .section-four-card-2 {
-        grid-area: 3/span 1;
+        grid-area: 3 / span 1;
     }
 
     .section-four-card-3 {
-        grid-area: 4/span 1;
+        grid-area: 4 / span 1;
     }
 
     .section-four-button {
-        grid-area: 5/span 1;
+        grid-area: 5 / span 1;
     }
 
     .section-four div {
@@ -312,6 +307,7 @@
         margin-top: 14px;
         margin-bottom: 18px;
     }
+
     .section-four-heading p {
         width: inherit;
         line-height: 28px;
@@ -321,7 +317,7 @@
 
     .project-card img:first-of-type {
         width: inherit;
-     }
+    }
 
     .section-four .project-card {
         margin-bottom: 35px;
@@ -333,19 +329,17 @@
         padding: 0.9rem 0rem;
         margin: auto;
         border-radius: 0.5rem;
-     }
+    }
 
     /* ******************* */
     /* SECTION FIVE SYLING */
     /* ******************* */
 
     .section-five {
-         width: inherit;
+        width: inherit;
         height: inherit;
-        padding:0px;
+        padding: 0px;
         padding-bottom: 40px;
-
-
     }
 
     .section-five div {
@@ -355,10 +349,10 @@
     }
 
     .section-five h2 {
-       padding-left: 3.75vw;
-       padding-right: 3.75vw;
-       margin-top: 130px;
-       font-size: 32px
+        padding-left: 3.75vw;
+        padding-right: 3.75vw;
+        margin-top: 130px;
+        font-size: 32px;
     }
 
     .section-five>p {
@@ -368,14 +362,13 @@
         margin-bottom: 10px;
         font-size: 18.5px;
         line-height: 25px;
-
-     }
+    }
 
     article.q-container {
-        display: grid; 
-        grid-template-areas: 
-        "question q-button"
-        "q-answer q-button";
+        display: grid;
+        grid-template-areas:
+            "question q-button"
+            "q-answer q-button";
         grid-template-columns: 11fr 1fr;
         row-gap: 0px;
     }
@@ -392,7 +385,7 @@
 
     .q-answer {
         grid-area: q-answer;
-        font-size:15.4px;
+        font-size: 15.4px;
         line-height: 24px;
     }
 
@@ -401,7 +394,7 @@
     /* ****************** */
 
     .section-six {
-         grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas:
             "section-six-heading"
             "section-six-card-1"
@@ -411,8 +404,7 @@
         column-gap: 0px;
         margin: auto;
         width: inherit;
-        padding:0px;
-
+        padding: 0px;
     }
 
     .section-six-card {
@@ -420,19 +412,19 @@
     }
 
     .section-six-card-1 {
-        grid-area: 2/span 1;
+        grid-area: 2 / span 1;
     }
 
     .section-six-card-2 {
-        grid-area: 3/span 1;
+        grid-area: 3 / span 1;
     }
 
     .section-six-card-3 {
-        grid-area: 4/span 1;
+        grid-area: 4 / span 1;
     }
 
     .section-six-card-4 {
-        grid-area: 5/span 1;
+        grid-area: 5 / span 1;
     }
 
     .section-six .section-six-heading {
@@ -451,7 +443,7 @@
 
     .section-six-card {
         margin-top: 24px;
-        padding:  25px;
+        padding: 25px;
         height: inherit;
         margin-left: 3.75vw;
         margin-right: 3.75vw;
@@ -465,10 +457,7 @@
     .section-six-card p {
         margin-top: 10px;
         margin-bottom: 10px;
-     }
-
-
-
+    }
 
     /* ********************* */
     /* PROJECTS PAGE STYLING */
@@ -498,7 +487,6 @@
         margin-top: 18px;
     }
 
-
     div.filter {
         margin: 0 15px;
         margin-top: 50px;
@@ -510,7 +498,6 @@
         margin-right: 12px;
     }
 
-
     .projects-page-container {
         grid-template-columns: 1fr;
         padding: 0px;
@@ -521,39 +508,39 @@
     }
 
     .project-1 {
-        grid-area: 2/span 1;
+        grid-area: 2 / span 1;
     }
 
     .project-2 {
-        grid-area: 3/span 1;
+        grid-area: 3 / span 1;
     }
 
     .project-3 {
-        grid-area: 4/span 1;
+        grid-area: 4 / span 1;
     }
 
     .project-4 {
-        grid-area: 5/span 1;
+        grid-area: 5 / span 1;
     }
 
     .project-5 {
-        grid-area: 6/span 1;
+        grid-area: 6 / span 1;
     }
 
     .project-6 {
-        grid-area: 7/span 1;
+        grid-area: 7 / span 1;
     }
 
     .project-7 {
-        grid-area: 8/span 1;
+        grid-area: 8 / span 1;
     }
 
     .project-8 {
-        grid-area: 9/span 1;
+        grid-area: 9 / span 1;
     }
 
     .project-9 {
-        grid-area: 10/span 2;
+        grid-area: 10 / span 2;
     }
 
     /* ******************** */
@@ -570,7 +557,6 @@
         height: 240px;
         object-fit: cover;
         border-radius: 18px;
-        ;
     }
 
     .project-card a {
@@ -604,7 +590,6 @@
         margin-top: 24px;
     }
 
-
     /* ************** */
     /* FOOTER STYLING */
     /* ************** */
@@ -614,10 +599,10 @@
         grid-template-areas:
             "footer-right"
             "footer-left";
-     }
+    }
 
     div.footer-right {
-        grid-area: 1/span 2;
+        grid-area: 1 / span 2;
         padding-bottom: 0px;
         padding-top: 30px;
         margin-top: 50px;
@@ -632,7 +617,7 @@
 
     div.footer-left {
         border: none;
-        grid-area: 2/span 2;
+        grid-area: 2 / span 2;
         padding-top: 0px;
         margin-top: 20px;
         margin-left: 15px;
