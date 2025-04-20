@@ -651,6 +651,7 @@ article.q-container {
     font-size:15.4px;
     line-height: 24px;
     margin-top: 0px;
+    display: none;
 }
 
 
@@ -962,8 +963,13 @@ article.q-container {
     .section-four-button:hover {
         background-color: #6941C6;
     }
-    
 
+    .section-five article>svg:hover  path{
+       stroke: #6941C6;
+    }
+
+    
+    
     .footer-right svg:hover path {
         fill: white;
     }
