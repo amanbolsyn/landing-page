@@ -641,6 +641,14 @@ article.q-container {
     margin-left: 40px;
 }
 
+.q-plus-button {
+    display: block;
+}
+
+.q-minus-button{
+    display:none;
+}
+
 .q-answer {
     grid-area: q-answer;
     font-size: 15.4px;
@@ -910,6 +918,12 @@ article.q-container {
     }
 }
 
+@media only screen and (max-width:374px) {
+   .body-container {
+    display:none;
+   }
+}
+
 @media only screen and (min-width: 600px) {
 
     #nav-right a:hover {
@@ -951,12 +965,16 @@ article.q-container {
         stroke: #6941c6;
     }
 
-   .q-container:hover svg>path{
+    .q-container:hover h3{
+        color: #53389e;
+        cursor: pointer;
+    }
+
+    .q-container:hover svg>path{
         stroke: #6941c6;
     }
 
-    .q-container:hover h3{
-        color: #53389e;
+    .q-container:hover{
         cursor: pointer;
     }
 
