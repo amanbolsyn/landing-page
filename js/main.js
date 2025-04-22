@@ -1,7 +1,12 @@
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll(".q-container").forEach((question, index) => {
-    question.addEventListener("click", function () {
 
+//Saved theme 
+const savedTheme = document.getElementById("theme-toggle");
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  //FAQ accordion 
+  document.querySelectorAll(".q-container").forEach((question) => {
+    question.addEventListener("click", function () {
 
       const plusButton = question.querySelector(".q-button>.q-plus-button");
       const minusButton = question.querySelector(".q-button>.q-minus-button");
@@ -20,4 +25,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
   });
+
+
+
+//Theme saving
+const themePref = localStorage.getItem("theme-preference")
+if (themePref === "false") {
+    savedTheme.checked = false;
+} else if (themePref === "true") {
+    savedTheme.checked = true;
+}
+
+savedTheme.addEventListener("change", function() {
+
+    localStorage.setItem("theme-preference", savedTheme.checked)
+
+});
+
+
+
+
 });
