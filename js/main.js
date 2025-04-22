@@ -63,7 +63,7 @@ scrollUpBttn.addEventListener("click", function() {
 });
 
 
-  //handles burger menu logic
+  //handles burger menu
   ShowBurgerMenu();
 
   //automatic slideshow logic 

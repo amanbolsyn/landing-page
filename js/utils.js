@@ -65,7 +65,7 @@ function ShowBurgerMenu(){
     if(screen.width>600 || screen.width<375) {
         burgerIcon.style.display = "none"
         closeIcon.style.display = "none"
-        mobileNav.style.display = "none"
+        mobileNav.classList.remove("menu-visible")
         //
       } else if(screen.width<=600 && screen.width>=375){
         //
