@@ -1,3 +1,6 @@
+import { ShowSlides} from "./utils.js";
+
+
 
 //saved theme checkbox
 const savedTheme = document.getElementById("theme-toggle");
@@ -6,6 +9,11 @@ const savedTheme = document.getElementById("theme-toggle");
 const scrollUpBttn = document.querySelector(".scroll-up");
 
 document.addEventListener("DOMContentLoaded", function () {
+
+
+  //automatic slideshow logic 
+  ShowSlides();
+
 
   //FAQ accordion 
   document.querySelectorAll(".q-container").forEach((question) => {
