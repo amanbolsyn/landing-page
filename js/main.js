@@ -1,6 +1,5 @@
 import { ShowSlides} from "./utils.js";
-
-
+import { ShowBurgerMenu } from "./utils.js";
 
 //saved theme checkbox
 const savedTheme = document.getElementById("theme-toggle");
@@ -9,11 +8,6 @@ const savedTheme = document.getElementById("theme-toggle");
 const scrollUpBttn = document.querySelector(".scroll-up");
 
 document.addEventListener("DOMContentLoaded", function () {
-
-
-  //automatic slideshow logic 
-  ShowSlides();
-
 
   //FAQ accordion 
   document.querySelectorAll(".q-container").forEach((question) => {
@@ -65,8 +59,15 @@ window.addEventListener("scroll", function() {
 
 //scroll up button function
 scrollUpBttn.addEventListener("click", function() {
-    scrollTo(0, 0)
+    scrollTo(0,0)
 });
+
+
+  //handles burger menu logic
+  ShowBurgerMenu();
+
+  //automatic slideshow logic 
+  ShowSlides();
 
 
 });

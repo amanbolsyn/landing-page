@@ -1,6 +1,10 @@
 
 const slides = document.querySelectorAll(".slide");
 
+const burgerIcon = document.getElementById("burger-menu");
+const closeIcon = document.getElementById("close-icon");
+const mobileNav = document.querySelector(".mobile-nav-container");
+
 let slideIndex = 0;
 
 //get dots from every slide
@@ -14,7 +18,7 @@ document.querySelectorAll(".dot").forEach((dot, index) => {
    
         slides[index%3].style.display = "block";
 
-        
+
         slideIndex = index%3;     
    })
 });
@@ -43,6 +47,18 @@ function ShowSlides(){
 }
 
 
+function ShowBurgerMenu(){
+   burgerIcon.addEventListener("click", function() {
+    burgerIcon.style.display = "none";
+    closeIcon.style.display = "block"
+    mobileNav.style.display = "inline-block"
+   })
 
+   closeIcon.addEventListener("click", function() {
+    burgerIcon.style.display = "block";
+    closeIcon.style.display = "none"
+    mobileNav.style.display = "none"
+   })
+}
 
-export {ShowSlides}
+export {ShowSlides, ShowBurgerMenu}

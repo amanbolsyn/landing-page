@@ -1,4 +1,6 @@
 :root {
+    --burger-menu-color: #414651;
+
     --text-color: black;
     --text-color-heading: black;
     --text-color-pharagraph: #535862;
@@ -24,6 +26,8 @@
 }
 
 :root:has(#theme-toggle:checked) {
+    --burger-menu-color: #FFFFFF;
+
     --text-color: #94979c;
     --text-color-heading: white;
     --text-color-pharagraph: #94979c;
@@ -33,7 +37,7 @@
 
     --logo-text-color: white;
 
-    --background-color-one: black;
+    --background-color-one: #0C0E12;
     --background-color-two: #13161b;
 
     --bttn-background-color: #13161b;
@@ -111,7 +115,7 @@ html {
     font-size: 16px;
 }
 
-#nav-right a:not(#light-theme, #burger-menu, #dark-theme) {
+#nav-right a:not(#light-theme, #burger-menu, #dark-theme, #close-icon) {
     position: relative;
     bottom: 7px;
     margin-right: 16px;
@@ -138,6 +142,71 @@ label input[type="checkbox"]:checked~svg#dark-theme {
     display: none;
 }
 
+#burger-menu path{
+    stroke: var(--burger-menu-color)
+}
+
+#close-icon {
+    display: none;
+}
+
+header div.mobile-nav-container {
+    display: none;
+    background-color: var(--background-color-one);
+    margin: 0px;
+}
+
+div.mobile-nav-container div.mobile-nav {
+    display:grid;
+    grid-template-areas:  
+    "mobile-nav-main mobile-nav-aside";
+    grid-template-columns:  14fr 1fr;
+    margin: 0px;
+}
+
+div.mobile-nav div.mobile-nav-main {
+    grid-area: mobile-nav-main;
+    display: grid;
+    margin:0px;
+}
+
+div.mobile-nav-main a {
+    color: var(--text-color-pharagraph);
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+div.mobile-nav-main a:hover {
+    background-color: #53389E;
+    color:white;
+}
+
+div.mobile-nav div.mobile-nav-aside {
+    grid-area:mobile-nav-aside;
+    display:grid;
+    margin:0px;
+    background-color: #53389E;
+}
+
+div.mobile-nav-aside svg {
+    padding-right: 15px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div.mobile-nav-main a:last-of-type{
+    margin-bottom: 200px;
+}
+
+div.mobile-nav-aside label{
+    margin-bottom: 200px;
+}
+
+
+
+
+
 /* links inside nav element  */
 nav div a {
     text-decoration: none;
@@ -146,6 +215,7 @@ nav div a {
     line-height: 24px;
     font-style: normal;
 }
+
 
 /* Main container grid */
 .main-page-container {
