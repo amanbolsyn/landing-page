@@ -40,9 +40,7 @@ if (themePref === "false") {
 }
 
 savedTheme.addEventListener("change", function() {
-
     localStorage.setItem("theme-preference", savedTheme.checked)
-
 });
 
 
@@ -60,7 +58,6 @@ window.addEventListener("scroll", function() {
 //scroll up button function
 scrollUpBttn.addEventListener("click", function() {
     scrollTo(0, 0)
-
 });
 
 
