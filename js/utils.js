@@ -59,6 +59,22 @@ function ShowBurgerMenu(){
     closeIcon.style.display = "none"
     mobileNav.style.display = "none"
    })
+
+   //
+   window.addEventListener("resize", function(){
+    if(screen.width>600 || screen.width<375) {
+        burgerIcon.style.display = "none"
+        closeIcon.style.display = "none"
+        mobileNav.style.display = "none"
+        //
+      } else if(screen.width<=600 && screen.width>=375){
+        //
+          if(this.window.getComputedStyle(burgerIcon).getPropertyValue("display") === "none"
+        && this.window.getComputedStyle(closeIcon).getPropertyValue("display") === "none"){
+            burgerIcon.style.display = "block"
+        }
+      }
+   } )
 }
 
 export {ShowSlides, ShowBurgerMenu}

@@ -23,6 +23,9 @@
     --scroll-up-backgound-hover:#373A41;
 
     --section-six-card-hover-color: #00000017;
+
+    --dark-theme-image: none;
+    --light-theme-image:inline-block;
 }
 
 :root:has(#theme-toggle:checked) {
@@ -50,6 +53,9 @@
     --scroll-up-backgound-hover:#FAFAFA;
 
     --section-six-card-hover-color: #6941c649;
+
+    --dark-theme-image: inline-block;
+    --light-theme-image: none;
 }
 
 html {
@@ -126,17 +132,21 @@ html {
 }
 
 /* Hide the SVG when the checkbox is checked */
-label input[type="checkbox"]:checked~svg#light-theme {
+/* label input[type="checkbox"]:checked~svg#light-theme {
     display: none;
-}
+} */
 
 #dark-theme {
-    display: none;
+    display: var(--dark-theme-image);
 }
 
-label input[type="checkbox"]:checked~svg#dark-theme {
-    display: inline;
+#light-theme {
+    display: var(--light-theme-image);
 }
+
+/* label input[type="checkbox"]:checked~svg#dark-theme {
+    display: inline;
+} */
 
 #burger-menu {
     display: none;
@@ -202,10 +212,6 @@ div.mobile-nav-main a:last-of-type{
 div.mobile-nav-aside label{
     margin-bottom: 200px;
 }
-
-
-
-
 
 /* links inside nav element  */
 nav div a {
