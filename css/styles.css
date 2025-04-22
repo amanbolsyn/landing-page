@@ -161,12 +161,17 @@ html {
 }
 
 header div.mobile-nav-container {
+    position: fixed; /* or absolute */
+    top: 80px;
+    left: 0;
+    width: 100%;
     background-color: var(--background-color-one);
-    margin: 0px;
+    margin: 0;
     opacity: 0;
     transform: translateY(-5%);
     pointer-events: none;
-    transition: opacity 0.3s, transform 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
 }
 
 header div.menu-visible {

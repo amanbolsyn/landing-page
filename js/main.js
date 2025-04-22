@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         plusButton.style.display = "block";
         minusButton.style.display = "none";
-        questionAnswer.style.display = "none"
+        questionAnswer.style.display = "none";
       }
 
     });

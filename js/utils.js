@@ -47,6 +47,8 @@ function ShowSlides(){
 }
 
 
+
+//burger menu logic
 function ShowBurgerMenu(){
    burgerIcon.addEventListener("click", function() {
     burgerIcon.style.display = "none";
