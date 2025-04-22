@@ -1,6 +1,9 @@
 
-//Saved theme 
+//saved theme checkbox
 const savedTheme = document.getElementById("theme-toggle");
+
+//scroll up button
+const scrollUpBttn = document.querySelector(".scroll-up");
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -43,6 +46,22 @@ savedTheme.addEventListener("change", function() {
 });
 
 
+
+//handels the dissaperance of scroll up button
+window.addEventListener("scroll", function() {
+    if(document.documentElement.scrollTop > 300 || document.body.scrollTop > 300) {
+        scrollUpBttn.style.display = "block";
+    } else {
+        scrollUpBttn.style.display = "none";
+    }
+});
+
+
+//scroll up button function
+scrollUpBttn.addEventListener("click", function() {
+    scrollTo(0, 0)
+
+});
 
 
 });

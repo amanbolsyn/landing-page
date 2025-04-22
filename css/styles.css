@@ -16,6 +16,10 @@
     --bttn-border-color: #d5d7da;
     --bttn-hover-color: #fafafa;
 
+    --scroll-up-background-color:#13161b;
+    --scroll-up-text-color: #FFFFFF;
+    --scroll-up-backgound-hover:#373A41;
+
     --section-six-card-hover-color: #00000017;
 }
 
@@ -36,6 +40,10 @@
     --bttn-text-color: #ffffff;
     --bttn-border-color: #373a41;
     --bttn-hover-color: #373a41;
+
+    --scroll-up-background-color:#ffffff;
+    --scroll-up-text-color: #414651;
+    --scroll-up-backgound-hover:#FAFAFA;
 
     --section-six-card-hover-color: #6941c649;
 }
@@ -192,6 +200,20 @@ nav div a {
     grid-area: section-container-six;
 }
 
+
+.scroll-up {
+    position:fixed;
+    background-color: var(--scroll-up-background-color);
+    border-radius: 6px;
+    padding: 8px 13px;
+    text-align: center;
+    left: 95vw;
+    top: 90vh;
+}
+
+.scroll-up svg path {
+    fill: var(--scroll-up-text-color);
+}
 /* ******************* */
 /* SECTION ONE STYLING */
 /* ******************* */
@@ -938,6 +960,11 @@ article.q-container {
     #nav-right label:hover svg#dark-theme>path {
         fill: #6941c6;
         stroke: #6941c6;
+    }
+
+    .scroll-up:hover {
+        cursor: pointer;
+        background-color: var(--scroll-up-backgound-hover);
     }
 
     .section-one a:nth-of-type(1):hover {
