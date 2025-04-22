@@ -50,14 +50,14 @@ function ShowSlides(){
 function ShowBurgerMenu(){
    burgerIcon.addEventListener("click", function() {
     burgerIcon.style.display = "none";
-    closeIcon.style.display = "block"
-    mobileNav.style.display = "inline-block"
+    closeIcon.style.display = "block";
+    mobileNav.classList.add("menu-visible");
    })
 
    closeIcon.addEventListener("click", function() {
     burgerIcon.style.display = "block";
     closeIcon.style.display = "none"
-    mobileNav.style.display = "none"
+    mobileNav.classList.remove("menu-visible");
    })
 
    //

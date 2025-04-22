@@ -161,10 +161,19 @@ html {
 }
 
 header div.mobile-nav-container {
-    display: none;
     background-color: var(--background-color-one);
     margin: 0px;
+    opacity: 0;
+    transform: translateX(-100%);
+    pointer-events: none;
+    transition: opacity 0.3s, transform 0.6s ease-in-out;
 }
+
+header div.menu-visible {
+    opacity: 1;
+    transform: translateX(0%);
+    pointer-events: auto;
+ }
 
 div.mobile-nav-container div.mobile-nav {
     display:grid;
