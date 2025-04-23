@@ -5,6 +5,7 @@ const burgerIcon = document.getElementById("burger-menu");
 const closeIcon = document.getElementById("close-icon");
 const mobileNav = document.querySelector(".mobile-nav-container");
 
+
 let slideIndex = 0;
 
 //get dots from every slide
@@ -61,6 +62,17 @@ function ShowBurgerMenu(){
     closeIcon.style.display = "none"
     mobileNav.classList.remove("menu-visible");
    })
+
+   mobileNav.querySelectorAll("a").forEach((link) =>{
+
+     link.addEventListener("click", function(){
+        burgerIcon.style.display = "block";
+        closeIcon.style.display = "none"
+        mobileNav.classList.remove("menu-visible");
+     })
+   });
+
+   console.log(mobileNavLinks)
 
    //
    window.addEventListener("resize", function(){
