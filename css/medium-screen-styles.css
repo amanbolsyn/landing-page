@@ -16,6 +16,11 @@
         min-width:1018px;
     }
 
+    .scroll-up {
+    
+        left: 95vw;
+        top: 90vh;
+    }
     .section-container-one, .section-container-two, .section-container-three, .section-container-four, .section-container-five, .section-container-six {
         min-width:1018px;
     }
@@ -204,7 +209,5 @@
             "project-card project-card"
             "project-card project-card";
     }
-
-
 }
 

@@ -22,7 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
         projectCards = Shuffle(projectCards);
         
         for(let i = 0; i<3; i++){
+
           sectionFour.insertBefore(projectCards[i], sectionFourButton)
+          
         }
  
     }

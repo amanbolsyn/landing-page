@@ -917,52 +917,25 @@ article.q-container {
     grid-area: projects-page-container;
     display: grid;
     grid-template-areas:
-        "projects-section-heading projects-section-heading projects-section-heading"
-        "project-card project-card project-card"
-        "project-card project-card project-card"
-        "project-card project-card project-card";
-    gap: 40px 30px;
+        "projects-section-heading"
+        "projects-container";
+     gap: 40px 30px;
     padding: 0 110px;
     width: inherit;
     max-width: 1220px;
     margin: auto;
 }
 
-/* .project-card-1 {
-    grid-area: project-card-1;
+.projects-container{
+    grid-area: projects-container;
+    display:grid; 
+    grid-template-areas: 
+    "project-card project-card project-card"
+    "project-card project-card project-card"
+    "project-card project-card project-card";
+    gap: 40px 30px;
+    margin: auto;
 }
-
-.project-card-2 {
-    grid-area: project-card-2;
-}
-
-.project-card-3 {
-    grid-area: project-card-3;
-}
-
-.project-card-4 {
-    grid-area: project-card-4;
-}
-
-.project-card-5 {
-    grid-area: project-card-5;
-}
-
-.project-card-6 {
-    grid-area: project-card-6;
-}
-
-.project-card-7 {
-    grid-area: project-card-7;
-}
-
-.project-card-8 {
-    grid-area: project-card-8;
-}
-
-.project-card-9 {
-    grid-area: project-card-9;
-} */
 
 .projects-page-container {
     padding-bottom: 80px;

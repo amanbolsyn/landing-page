@@ -255,4 +255,27 @@ function Shuffle(projects){
 
 }
 
-export {ShowSlides, ShowBurgerMenu, CreateProjectCards, ThemeToggle, ScrollUp, FAQAccrodion, Shuffle}
+function FilterProjects(projects, filter){
+    
+    let filteredProjects = [];
+
+    if(filter === "View all"){
+        return projects;
+    } else {
+
+        if(filter === "Websites"){
+            filter = "Website"
+        } else {
+            filter = "Application"
+        }
+
+        for(let i = 0; i<projects.length; i++){
+            if(filter === projects[i].tag){
+                filteredProjects.push(projects[i])
+            }
+        }
+    }
+    return  filteredProjects;
+}
+
+export {ShowSlides, ShowBurgerMenu, CreateProjectCards, ThemeToggle, ScrollUp, FAQAccrodion, Shuffle, FilterProjects}
