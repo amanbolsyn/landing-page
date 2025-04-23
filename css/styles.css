@@ -557,7 +557,7 @@ nav div a {
     display: grid;
     grid-template-areas:
         "section-four-heading section-four-heading section-four-heading"
-        "section-four-card-1 section-four-card-2 section-four-card-3"
+        "project-card project-card project-card "
         "section-four-button section-four-button section-four-button ";
     gap: 0 30px;
     width: inherit;
@@ -567,17 +567,6 @@ nav div a {
     margin: auto;
 }
 
-.section-four-card-1 {
-    grid-area: section-four-card-1;
-}
-
-.section-four-card-2 {
-    grid-area: section-four-card-2;
-}
-
-.section-four-card-3 {
-    grid-area: section-four-card-3;
-}
 
 .section-four-heading {
     grid-area: section-four-heading;
@@ -929,9 +918,9 @@ article.q-container {
     display: grid;
     grid-template-areas:
         "projects-section-heading projects-section-heading projects-section-heading"
-        "project-1 project-2 project-3"
-        "project-4 project-5 project-6"
-        "project-7 project-8 project-9";
+        "project-card project-card project-card"
+        "project-card project-card project-card"
+        "project-card project-card project-card";
     gap: 40px 30px;
     padding: 0 110px;
     width: inherit;
@@ -939,41 +928,41 @@ article.q-container {
     margin: auto;
 }
 
-.project-1 {
-    grid-area: project-1;
+/* .project-card-1 {
+    grid-area: project-card-1;
 }
 
-.project-2 {
-    grid-area: project-2;
+.project-card-2 {
+    grid-area: project-card-2;
 }
 
-.project-3 {
-    grid-area: project-3;
+.project-card-3 {
+    grid-area: project-card-3;
 }
 
-.project-4 {
-    grid-area: project-4;
+.project-card-4 {
+    grid-area: project-card-4;
 }
 
-.project-5 {
-    grid-area: project-5;
+.project-card-5 {
+    grid-area: project-card-5;
 }
 
-.project-6 {
-    grid-area: project-6;
+.project-card-6 {
+    grid-area: project-card-6;
 }
 
-.project-7 {
-    grid-area: project-7;
+.project-card-7 {
+    grid-area: project-card-7;
 }
 
-.project-8 {
-    grid-area: project-8;
+.project-card-8 {
+    grid-area: project-card-8;
 }
 
-.project-9 {
-    grid-area: project-9;
-}
+.project-card-9 {
+    grid-area: project-card-9;
+} */
 
 .projects-page-container {
     padding-bottom: 80px;
@@ -1008,17 +997,15 @@ article.q-container {
 }
 
 .filter {
-    border-bottom: 1px solid;
+    border-bottom: 2px solid;
     border-bottom-color: #e9eaeb;
     margin-top: 70px;
     padding-bottom: 15px;
 }
 
 .filter a {
-    padding: 0 5px;
-    margin-right: 14px;
+    padding: 0px 8px;
     color: #717680;
-    cursor: pointer;
 }
 
 .filter .filter-active {
@@ -1110,5 +1097,13 @@ article.q-container {
 
     .footer-right svg:hover path {
         fill: white;
+    }
+
+
+    .filter a:hover {
+        padding-bottom: 15px;
+        border-bottom: 2px #6941c6 solid;
+        color: #6941c6;
+        cursor: pointer;
     }
 }

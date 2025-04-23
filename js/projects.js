@@ -4,12 +4,6 @@ import  {CreateProjectCards} from "./utils.js"
 import { ThemeToggle } from "./utils.js";
 import  {ScrollUp} from "./utils.js";
 
-//saved theme checkbox
-const savedTheme = document.getElementById("theme-toggle");
-
-//scroll up button
-const scrollUpBttn = document.querySelector(".scroll-up");
-
 document.addEventListener("DOMContentLoaded", function () {
 
   fetchJSONData().then((projectsData) => {
@@ -20,6 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
         let projectCards = CreateProjectCards(projectsData);
 
 
+        const projectsPageContainer = document.querySelector(".projects-page-container");
+
+        for(let i = 0; i<projectCards.length; i++){
+            projectsPageContainer.appendChild(projectCards[i])
+        }
     }
 });
 

@@ -106,9 +106,9 @@
         grid-template-columns: 1fr;
         grid-template-areas:
             "section-four-heading"
-            "section-four-card-1"
-            "section-four-card-2"
-            "section-four-card-3"
+            "project-card"
+            "project-card"
+           "project-card"
             "section-four-button";
         column-gap: 0px;
         row-gap: 70px;
@@ -125,19 +125,8 @@
         width: inherit
     }
 
-    .section-four-card-1 {
-        grid-area: 2/span 1;
+    .project-card {
         margin:auto;
-     }
-
-    .section-four-card-2 {
-        grid-area: 3/span 1;
-        margin: auto;
-    }
-
-    .section-four-card-3 {
-        grid-area: 4/span 1;
-        margin: auto;
     }
 
     .section-four-button {
@@ -209,57 +198,13 @@
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "projects-section-heading projects-section-heading"
-            "project-1 project-2"
-            "project-3 project-4"
-            "project-5 project-6"
-            "project-7 project-8"
-            "project-9 project-9";
+            "project-card project-card"
+            "project-card project-card"
+            "project-card project-card"
+            "project-card project-card"
+            "project-card project-card";
     }
 
-    .project-1 {
-        grid-area: 2/span 1;
-        margin:auto;
-    }
-
-    .project-2 {
-        grid-area: 2/span 1;
-        margin:auto;
-    }
-
-    .project-3 {
-        grid-area: 3/span 1;
-        margin:auto;
-    }
-
-    .project-4 {
-        grid-area: 3/span 1;
-        margin:auto;
-    }
-
-    .project-5 {
-        grid-area: 4/span 1;
-        margin:auto;
-    }
-
-    .project-6 {
-        grid-area: 4/span 1;
-        margin:auto;
-    }
-
-    .project-7 {
-        grid-area: 5/span 1;
-        margin:auto;
-    }
-
-    .project-8 {
-        grid-area: 5/span 1;
-        margin:auto;
-    }
-
-    .project-9 {
-        grid-area: 6/span 2;
-        margin: auto;
-    }
 
 }
 

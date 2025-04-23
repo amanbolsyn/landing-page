@@ -19,7 +19,6 @@ document.querySelectorAll(".dot").forEach((dot, index) => {
    
         slides[index%3].style.display = "block";
 
-
         slideIndex = index%3;     
    })
 });
@@ -84,7 +83,7 @@ function ShowBurgerMenu(){
 
    //
    window.addEventListener("resize", function(){
-    if(screen.width>600 || screen.width<375) {
+    if(screen.width>600) {
         burgerIcon.style.display = "none";
         closeIcon.style.display = "none";
         mobileNav.classList.remove("menu-visible");
@@ -107,7 +106,6 @@ function CreateProjectCards(projectsData){
         //creating project card container
         let projectCard = document.createElement("article")
         projectCard.classList.add("project-card")
-        projectCard.classList.add("section-four-card-"+(i+1));
 
         //project img
         let projectCardImg  = document.createElement("img");
@@ -154,7 +152,6 @@ function CreateProjectCards(projectsData){
         projectCard.appendChild(projectDuration);
         projectCard.appendChild(projectDate);
 
-        console.log(projectCard);
         cards.push(projectCard);
 
       }
@@ -243,4 +240,19 @@ function FAQAccrodion(){
   });
 }
 
-export {ShowSlides, ShowBurgerMenu, CreateProjectCards, ThemeToggle, ScrollUp, FAQAccrodion}
+function Shuffle(projects){
+
+    let i = projects.length, j, temp;
+
+    while(--i>0){
+        j = Math.floor(Math.random() * (1+i));
+        temp = projects[j];
+        projects[j] = projects[i];
+        projects[i] = temp;
+    }
+
+    return projects;
+
+}
+
+export {ShowSlides, ShowBurgerMenu, CreateProjectCards, ThemeToggle, ScrollUp, FAQAccrodion, Shuffle}

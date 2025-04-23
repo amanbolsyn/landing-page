@@ -267,32 +267,18 @@
     /* SECTION FOUR SYLING */
     /* ******************* */
     .section-four {
+        grid-template-areas:
+        "section-four-heading"
+        "project-card"
+        "project-card"
+        "project-card"
+        "section-four-button";
         grid-template-columns: 1fr;
         column-gap: 0px;
         margin: auto;
         width: inherit;
         margin-bottom: 65px;
         padding: 0px;
-    }
-
-    .section-four-heading {
-        grid-area: 1 / span 1;
-    }
-
-    .section-four-card-1 {
-        grid-area: 2 / span 1;
-    }
-
-    .section-four-card-2 {
-        grid-area: 3 / span 1;
-    }
-
-    .section-four-card-3 {
-        grid-area: 4 / span 1;
-    }
-
-    .section-four-button {
-        grid-area: 5 / span 1;
     }
 
     .section-four div {
@@ -465,6 +451,26 @@
     /* ********************* */
     /* PROJECTS PAGE STYLING */
     /* ********************* */
+    .projects-page-container {
+        grid-template-areas:
+        "projects-section-heading"
+        "project-card"
+        "project-card"
+        "project-card"
+        "project-card"
+        "project-card"
+        "project-card"
+        "project-card"
+        "project-card"
+        "project-card" ;
+        grid-template-columns: 1fr;
+        padding: 0px;
+        column-gap: 0px;
+        row-gap: 35px;
+        padding-bottom: 50px;
+        padding-bottom: 50px;
+    }
+
     .projects-section-heading {
         margin-top: 58px;
         margin-bottom: 17px;
@@ -500,52 +506,6 @@
         font-size: 16px;
         margin-right: 12px;
     }
-
-    .projects-page-container {
-        grid-template-columns: 1fr;
-        padding: 0px;
-        column-gap: 0px;
-        row-gap: 35px;
-        padding-bottom: 50px;
-        padding-bottom: 50px;
-    }
-
-    .project-1 {
-        grid-area: 2 / span 1;
-    }
-
-    .project-2 {
-        grid-area: 3 / span 1;
-    }
-
-    .project-3 {
-        grid-area: 4 / span 1;
-    }
-
-    .project-4 {
-        grid-area: 5 / span 1;
-    }
-
-    .project-5 {
-        grid-area: 6 / span 1;
-    }
-
-    .project-6 {
-        grid-area: 7 / span 1;
-    }
-
-    .project-7 {
-        grid-area: 8 / span 1;
-    }
-
-    .project-8 {
-        grid-area: 9 / span 1;
-    }
-
-    .project-9 {
-        grid-area: 10 / span 2;
-    }
-
     /* ******************** */
     /* PROJECT CARD STYLING */
     /* ******************** */

@@ -16,5 +16,4 @@ async function fetchJSONData() {
         });
 }
 
-
 export {fetchJSONData}
