@@ -1,10 +1,14 @@
-import { ShowSlides} from "./utils.js";
 import { ShowBurgerMenu } from "./utils.js";
-import {fetchJSONData} from "./data.js";
-import  {CreateProjectCards} from "./utils.js";
+import {fetchJSONData} from "./data.js"
+import  {CreateProjectCards} from "./utils.js"
 import { ThemeToggle } from "./utils.js";
-import { ScrollUp } from "./utils.js";
-import {FAQAccrodion} from "./utils.js";
+import  {ScrollUp} from "./utils.js";
+
+//saved theme checkbox
+const savedTheme = document.getElementById("theme-toggle");
+
+//scroll up button
+const scrollUpBttn = document.querySelector(".scroll-up");
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -15,23 +19,17 @@ document.addEventListener("DOMContentLoaded", function () {
           
         let projectCards = CreateProjectCards(projectsData);
 
-        console.log(projectCards);
 
     }
-  });
-   
-  FAQAccrodion();
+});
 
   //scroll up button logic 
   ScrollUp();
-
+   
   //swithcing page theme logic
   ThemeToggle();
-   
+
   //handles burger menu
   ShowBurgerMenu();
-
-  //automatic slideshow logic 
-  ShowSlides();
 
 });
