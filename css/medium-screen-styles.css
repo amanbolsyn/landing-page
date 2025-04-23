@@ -202,12 +202,20 @@
     .projects-page-container {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-            "projects-section-heading projects-section-heading"
-            "project-card project-card"
-            "project-card project-card"
-            "project-card project-card"
-            "project-card project-card"
-            "project-card project-card";
+            "projects-section-heading "
+            "projects-container"
+    
+    }
+
+    .projects-container{
+        grid-area: projects-container;
+        display:grid;
+        grid-template-areas:
+        "project-card project-card"
+        "project-card project-card"
+        "project-card project-card"
+        "project-card project-card"
+        "project-card project-card";;
     }
 }
 

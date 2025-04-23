@@ -454,21 +454,29 @@
     .projects-page-container {
         grid-template-areas:
         "projects-section-heading"
-        "project-card"
-        "project-card"
-        "project-card"
-        "project-card"
-        "project-card"
-        "project-card"
-        "project-card"
-        "project-card"
-        "project-card" ;
+         "projects-container" ;
         grid-template-columns: 1fr;
         padding: 0px;
         column-gap: 0px;
         row-gap: 35px;
         padding-bottom: 50px;
         padding-bottom: 50px;
+    }
+
+    .projects-container {
+        grid-area: projects-container;
+        display: grid;
+        grid-template-areas: 
+        "project-card"
+        "project-card"
+        "project-card"
+        "project-card"
+        "project-card"
+        "project-card"
+        "project-card"
+        "project-card"
+        "project-card";
+        row-gap: 35px;
     }
 
     .projects-section-heading {
