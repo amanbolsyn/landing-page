@@ -31,16 +31,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 const prevActiveFilter = document.querySelector(".filter-active")
                 prevActiveFilter.classList.remove("filter-active")
                 filter.classList.add("filter-active")
-     
-
-                let filteredData = FilterProjects(projectsData, filter.innerHTML);
-
-
-                let projectCards = CreateProjectCards(filteredData);
+    
+                let projectCards = CreateProjectCards(projectsData);
         
+                let filteredCards = FilterProjects(projectCards, filter.innerHTML);
+
                 projectsContainer.innerHTML = ""
-                for(let i = 0; i<projectCards.length; i++){
-                    projectsContainer.appendChild(projectCards[i])
+                for(let i = 0; i<filteredCards.length; i++){
+                    projectsContainer.appendChild(filteredCards[i])
                 }
 
             })

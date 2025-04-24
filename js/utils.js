@@ -270,7 +270,7 @@ function FilterProjects(projects, filter){
         }
 
         for(let i = 0; i<projects.length; i++){
-            if(filter === projects[i].tag){
+            if(filter === projects[i].querySelector("a").innerHTML){
                 filteredProjects.push(projects[i])
             }
         }
