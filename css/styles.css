@@ -998,6 +998,10 @@ article.q-container {
    .body-container {
     display:none;
    }
+    .projects-body-container {
+        display: none;
+    }
+
 }
 
 @media only screen and (min-width: 600px) {
