@@ -11,11 +11,13 @@ Browser application called "landing-page" is a landing website for an unknown co
 + Slider.
 
 ## Filter for "Projects" 
-Filter project by "All", "Applications" and "Websites" tags
+Filter project by "All", "Applications" and "Websites" tags.
+
 ![Alt text](./assets/gifs/filter-projects.gif)
 
 ## Slider
 Moves to the next silde every three seconds. When hovering freezes the state. Dots on the bottom helps to navigate within the slides.
+
 ![Alt text](./assets/gifs/silder-func.gif)
 
 ## Installation
