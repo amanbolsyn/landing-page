@@ -46,6 +46,7 @@ Congratulations you installed my application. Hopefully you will be able to enjo
 
 + [Project Figma Design](https://www.figma.com/design/3Pi8gnNDhNHt2HzcpqM1hs/)
 + [Project by Alem School](https://alem.school)
++ [Pixel Perfect extension for Google Chrome](https://chromewebstore.google.com/detail/nnhifpoojdlddpnhjbhiagddgckpmpfb?utm_source=item-share-cb)
 
 ## Contributing
 
